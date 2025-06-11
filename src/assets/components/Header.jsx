@@ -4,11 +4,13 @@ const Header = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let timer;
     if (selected) {
-      setTimeout(() => setIsVisible(true), 100);
+      timer = setTimeout(() => setIsVisible(true), 1000);
     } else {
       setIsVisible(false);
     }
+    return () => clearTimeout(timer);
   }, [selected]);
 
   return (

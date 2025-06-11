@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+@font-face {
+  font-family: 'Playball';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playball/v21/TK3gWksYAxQ7jbsKcg8Eneo.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+
 @tailwind base;
 @tailwind components;
-@tailwind utilities;  
-
-
-
+@tailwind utilities;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,12 +20,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.test-playball {
+  font-family: 'Playball', cursive !important;
+  font-size: 2rem;
+
 }
 
 a {
@@ -33,6 +44,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  font-family: 'Lato', sans-serif;
   min-width: 320px;
   min-height: 100vh;
 }

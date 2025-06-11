@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
-const Software = () => {
+const Software = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Fade in on mount
-    setTimeout(() => setIsVisible(true), 100);
-    // Optionally, clean up on unmount
-    return () => setIsVisible(false);
-  }, []);
+    let timer;
+    if (selected) {
+      timer = setTimeout(() => setIsVisible(true), 100);
+    } else {
+      setIsVisible(false);
+    }
+    return () => clearTimeout(timer);
+  }, [selected]);
 
   return (
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out 

@@ -4,11 +4,13 @@ const Contact = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let timer;
     if (selected) {
-      setTimeout(() => setIsVisible(true), 100);
+      timer = setTimeout(() => setIsVisible(true), 100);
     } else {
       setIsVisible(false);
     }
+    return () => clearTimeout(timer);
   }, [selected]);
 
   return (

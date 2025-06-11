@@ -16,12 +16,13 @@ const Header = ({ selected }) => {
   return (
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
+
       <h1 className="text-3xl font-bold text-center">About Me</h1>
       <div className="mt-2 text-lg text-justify max-w-[800px]">
         <p className="test-playball">“If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them.”</p>
         <p className="test-playball">― Henry David Thoreau</p>
         <h4>About me, Professionally:</h4>
-        <p>I use that quote because I start there, imagine the best solution, regardless of its existence. then see if you can make it work. Don't start with a catalog.</p> 
+        <p>I use that quote because I start there, imagine the best solution, regardless of its existence. then see if you can make it work. Don't start with a catalog.</p>
         <p>I'm a methodical problem-solver, passionate about tech, software development, and optimizing workflows. Over the past 30 years, I’ve built a reputation for resourcefulness, clarity in troubleshooting, and a strong focus on scalable solutions. Whether refining backend architecture, troubleshooting cross-platform compatibility, or designing user-friendly interfaces, I thrive on finding efficient, reliable answers.</p>
         <p>Beyond technical expertise, I value collaboration and knowledge-sharing. I enjoy helping others streamline their environments, ensuring that tech works for people—not against them. My work spans full-stack development, network configurations, cloud integration, and automation, and I take pride in creating audit-proof, business-aligned solutions that empower both teams and individuals.</p>
         <p>Outside of code and configurations, I approach challenges with persistence and logic, always striving for structured, user-focused outcomes. If you're working on something ambitious, complex, or just frustrating, I’m the kind of person who finds a way to make it work—and make it make sense.</p>

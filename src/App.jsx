@@ -20,7 +20,7 @@ function App() {
         <Pillars setSelectedSection={setSelectedSection} />
       </div>
       {/* Second row: Section content */}
-      <div className="w-[1300px] min-h-[500px] flex items-start p-2">
+<div className="w-full max-w-[1300px] min-h-[500px] flex flex-col items-center p-2">
         {selectedSection === "header" && <Header selected={true} />}
         {selectedSection === "software" && <Software selected={true} />}
         {selectedSection === "foundation" && <Foundation selected={true} />}

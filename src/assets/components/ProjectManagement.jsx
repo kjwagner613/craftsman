@@ -4,18 +4,20 @@ const ProjectManagement = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let timer;
     if (selected) {
-      setTimeout(() => setIsVisible(true), 100);
+      timer = setTimeout(() => setIsVisible(true), 100);
     } else {
       setIsVisible(false);
     }
+    return () => clearTimeout(timer);
   }, [selected]);
 
   return (
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1 className="text-3xl font-bold text-center">Project Management</h1>
-      <p className="mt-2 text-lg text-justify max-w-[800px]">
+      <div className="mt-2 text-lg text-justify max-w-[800px]">
         <h2>Project Management & Software Development</h2>
         <p>Project management is the bridge between vision and execution, integrating people, processes, and technology to achieve a shared objective. Having worked alongside top industry professionals, I’ve learned that no two projects are alike—each requires agility, strategic planning, and proactive risk mitigation to ensure successful outcomes.</p>
 
@@ -41,7 +43,6 @@ const ProjectManagement = ({ selected }) => {
         </ul>
         <p>Additionally, I pursued PMI training & certification (PMBOK v5, 2015-2016) to further refine my project management expertise.</p>
         <p>At Freudenberg Medical, I expanded my project management scope:</p>
-
         <ul>
           <li>Created PMO for the newly projectized CPIM department.</li>
           <li>Developed custom SharePoint PM tools & trained new PMs using Microsoft Power Platform.</li>
@@ -49,8 +50,7 @@ const ProjectManagement = ({ selected }) => {
           <li>Led the cloud migration across 6 global sites.</li>
           <li>Oversaw Microsoft Copilot rollout, ensuring smooth adoption across the organization.</li>
         </ul>
-      </p>
-
+      </div>
     </div>
   );
 };

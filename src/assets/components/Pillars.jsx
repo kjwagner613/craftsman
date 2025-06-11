@@ -12,7 +12,8 @@ const Pillars = ({ setSelectedSection }) => {
     return (
         <div className={`transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"} relative`}>
             {/* Pillar Image */}
-            <img src="/pillars3.png" alt="Business Pillars" className="w-[700px]" />
+            <img src="/pillars3.png" alt="Business Pillars" className="w-[700px] z-10" />
+            <div className="cloud"></div>
 
             {/* Transparent Click Areas */}
             <div className="absolute top-[86.5%] left-[3%] w-[670px] h-[35px] cursor-pointer" onClick={() => setSelectedSection("foundation")}></div>

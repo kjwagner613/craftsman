@@ -12,10 +12,10 @@ const Pillars = ({ setSelectedSection }) => {
     return (
         <div className={`transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"} relative`}>
             {/* Pillar Image */}
-            <img src="/public/pillars3.png" alt="Business Pillars" className="w-[500px]" />
+            <img src="/pillars3.png" alt="Business Pillars" className="w-[500px]" />
 
             {/* Transparent Click Areas */}
-            <div className="absolute top-[85%] left-[10%] w-[420px] h-[35px] cursor-pointer" onClick={() => setSelectedSection("foundation")}></div>
+            <div className="absolute top-[83%] left-[10%] w-[420px] h-[35px] cursor-pointer" onClick={() => setSelectedSection("foundation")}></div>
             <div className="absolute top-[30%] left-[10%] w-[100px] h-[175px] cursor-pointer" onClick={() => setSelectedSection("software")}></div>
             <div className="absolute top-[30%] left-[40%] w-[100px] h-[175px] cursor-pointer" onClick={() => setSelectedSection("projectManagement")}></div>
             <div className="absolute top-[30%] left-[72%] w-[100px] h-[175px] cursor-pointer" onClick={() => setSelectedSection("automation")}></div>
@@ -24,9 +24,3 @@ const Pillars = ({ setSelectedSection }) => {
 };
 
 export default Pillars;
-{/* Pillar Image */ }
-<img
-    src="/public/pillars3.png"
-    alt="Three classical pillars labeled Software Development, Project Management, and Process Automation stand side by side supporting a stylized roof. The pillars are set against a clean background, conveying stability and professionalism."
-    className="w-[500px] mb-6"
-/>

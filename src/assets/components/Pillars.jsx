@@ -1,27 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React from 'react';
 
-// (Removed duplicate Pillars component)
+const Pillars = ({ setSelectedSection }) => (
+  <div className="relative w-full max-w-[900px] mx-auto py-8">
+    {/* Moving cloud animation */}
+    <div className="cloud z-10" />
+    <img
+      src="/pillars3.png"
+      alt="Business Pillars"
+      className="w-full h-auto mb-8"
+    />
 
-const Pillars = ({ setSelectedSection }) => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => setIsVisible(true), 1000); // Delayed fade-in effect
-    }, []);
-
-    return (
-        <div className={`transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"} relative`}>
-            {/* Pillar Image */}
-            <div className="cloud z-5"></div>
-            <img src="/pillars3.png" alt="Business Pillars" className="max-w-[700px] z-10" />
-
-            {/* Transparent Click Areas */}
-            <div className="absolute top-[86.5%] left-[3%] w-[600px] h-[35px] cursor-pointer" onClick={() => setSelectedSection("foundation")}></div>
-            <div className="absolute top-[30%] left-[10%] w-[120px] h-[225px] cursor-pointer" onClick={() => setSelectedSection("software")}></div>
-            <div className="absolute top-[30%] left-[41%] w-[120px] h-[225px] cursor-pointer" onClick={() => setSelectedSection("projectManagement")}></div>
-            <div className="absolute top-[30%] left-[72%] w-[120px] h-[225px] cursor-pointer" onClick={() => setSelectedSection("automation")}></div>
-        </div>
-    );
-};
+    {/* Invisible click targets */}
+    <div
+      className="absolute top-[86.5%] left-[3%] w-[600px] h-[35px] cursor-pointer z-30"
+      onClick={() => setSelectedSection('foundation')}
+    />
+    <div
+      className="absolute top-[30%] left-[10%] w-[120px] h-[225px] cursor-pointer z-30"
+      onClick={() => setSelectedSection('software')}
+    />
+    <div
+      className="absolute top-[30%] left-[41%] w-[120px] h-[225px] cursor-pointer z-30"
+      onClick={() => setSelectedSection('projectManagement')}
+    />
+    <div
+      className="absolute top-[30%] left-[72%] w-[120px] h-[225px] cursor-pointer z-30"
+      onClick={() => setSelectedSection('automation')}
+    />
+  </div>
+);
 
 export default Pillars;

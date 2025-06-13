@@ -17,12 +17,12 @@ const ProjectManagement = ({ selected }) => {
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1 className="text-3xl font-bold text-center">Project Management</h1>
-      <div className="mt-2 text-lg text-justify max-w-[800px]">
+      <div className="mt-5 mb-[15vh] text-lg text-justify max-w-[800px]">
         <h2>Project Management & Software Development</h2>
         <p>Project management is the bridge between vision and execution, integrating people, processes, and technology to achieve a shared objective. Having worked alongside top industry professionals, I’ve learned that no two projects are alike—each requires agility, strategic planning, and proactive risk mitigation to ensure successful outcomes.</p>
 
         <h2>Software Development & Project Management Alignment</h2>
-        <p>While some view planning in software development as a formality, I see the Software Development Life Cycle (SDLC) as an iterative, milestone-driven process, closely aligned with project management.</p>
+        <p>While some view planning in Software development as a formality, I see the Software Development Life Cycle (SDLC) as an iterative, milestone-driven process, closely aligned with project management.</p>
         <p>In highly regulated industries, I’ve structured SDLC phases to reflect tangible project milestones:</p>
         <ul>
           <li>Requirements → Stakeholder Alignment</li>

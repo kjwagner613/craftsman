@@ -2,8 +2,14 @@ import React from 'react';
 
 const Pillars = ({ setSelectedSection }) => (
   <div className="relative w-full max-w-[900px] mx-auto py-8">
-    {/* Moving cloud animation */}
-    <div id="pillars" className="cloud z-10" />    
+    {/* Moving cloud animation with clickable interaction */}
+    <div
+      className="cloud z-10 cursor-pointer"
+      onClick={() => setSelectedSection("AboutMe")}
+    />
+    
+
+
     <picture>
       <source
         srcSet="/pillars3-small.png"

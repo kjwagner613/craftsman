@@ -38,6 +38,7 @@ const Header = ({ selected }) => {
         <h2 className="text-justify">Foundational Experience:</h2>
         <p className="text-justify">A strong foundation should elevate vision, aspirations, and innovation—not constrain them. Infrastructure must be built to support ambition, not force ambition to conform to limitations. That’s why I design every system with <strong>scalability</strong> and <strong>adaptability</strong> at its core.</p>
         <p className="text-justify">Now, click the button below to go back to the top, then select the pillar to find out more about what how I support the successful achievement of business objectives.</p>
+        <p className="text-justify">Also you can click on the cloud to get back to the first page.</p>
 
 
       </div>

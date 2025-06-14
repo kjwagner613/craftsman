@@ -21,7 +21,7 @@ const ProjectManagement = ({ selected }) => {
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1>Project Management</h1>
-      <div className="mt-5 mb-[15vh] text-lg text-justify" style={{ maxWidth: "var(--max-width)" }}>
+      <div className="mt-5 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
         <h2>Project Management & Software Development</h2>
         <p>Project management is the bridge between vision and execution, integrating people, processes, and technology to achieve a shared objective. Having worked alongside top industry professionals, I’ve learned that no two projects are alike—each requires agility, strategic planning, and proactive risk mitigation to ensure successful outcomes.</p>
 

@@ -40,6 +40,11 @@
 
 }
 
+ul li {
+  margin-bottom: 8px; /* Adjust spacing as needed */
+  font-size: var(--font-size-body);
+}
+
 .cloud {
   width:355px;
   height: 200px;

@@ -29,11 +29,31 @@ const ProjectManagement = ({ selected }) => {
         <p>While some view planning in Software development as a formality, I see the Software Development Life Cycle (SDLC) as an iterative, milestone-driven process, closely aligned with project management.</p>
         <p>In highly regulated industries, I’ve structured SDLC phases to reflect tangible project milestones:</p>
         <ul>
-          <li>Requirements → Stakeholder Alignment</li>
-          <li>Development → Team Execution</li>
-          <li>Testing → Risk Mitigation</li>
-          <li>Deployment → Delivery & Implementation</li>
-          <li>Maintenance → Long-Term Optimization</li>
+          <li>
+            <span style={{ whiteSpace: "nowrap" }}>
+              Requirements &rarr; Stakeholder Alignment
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: "nowrap" }}>
+              Development &rarr; Team Execution
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: "nowrap" }}>
+              Testing &rarr; Risk Mitigation
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: "nowrap" }}>
+              Deployment &rarr; Delivery &amp; Implementation
+            </span>
+          </li>
+          <li>
+            <span style={{ whiteSpace: "nowrap" }}>
+              Maintenance &rarr; Long-Term Optimization
+            </span>
+          </li>
         </ul>
         <p>Software development isn’t just about writing code—it’s about managing teams, resources, and evolving progress in harmony.</p>
         <h2>History in Project Management</h2>
@@ -55,12 +75,12 @@ const ProjectManagement = ({ selected }) => {
           <li>Oversaw Microsoft Copilot rollout, ensuring smooth adoption across the organization.</li>
         </ul>
       </div>
-          <button
-                  onClick={scrollToTop}
-                  className="button"
-          >
-                  Back to Top
-          </button>
+      <button
+        onClick={scrollToTop}
+        className="button"
+      >
+        Back to Top
+      </button>
     </div>
   );
 };

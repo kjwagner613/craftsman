@@ -3,11 +3,11 @@ import React from 'react';
 const Pillars = ({ setSelectedSection }) => (
   <div className="relative w-full max-w-[900px] mx-auto py-8">
     {/* Moving cloud animation */}
-    <div className="cloud z-10" />
+    <div id="pillars" className="cloud z-10" />    
     <picture>
       <source
         srcSet="/pillars3-small.png"
-        media="(max-width: 700px)"
+        media="(max-width: 900px)"
         type="image/png"
       />
       <img

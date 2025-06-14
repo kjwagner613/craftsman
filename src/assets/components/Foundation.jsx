@@ -21,7 +21,7 @@ const Foundation = ({ selected }) => {
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1>Foundation</h1>
-      <p className="mt-2 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
+      <div className="mt-2 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
         <h4>The Core of My Work</h4>
         <p>Throughout my career, my focus has been aligning technology with evolving business needs—building systems that enhance efficiency, reliability, and adaptability through LEAN principles, integration, and iterative refinement.</p>
         <p>For nearly a decade, I delivered global solutions by supporting tools I didn’t always use firsthand, yet deeply understood. Whether reconfiguring routers, designing converters, or engineering facility infrastructure, I found that the true leverage of technology lay not just in its deployment, but in its ability to be reshaped as a solution.</p>
@@ -34,16 +34,16 @@ const Foundation = ({ selected }) => {
 
         <h4>Bringing It All Together</h4>
 
-          Each discipline strengthens the others:
-          <ul>
-            <li>Software development creates and refines solutions.</li>
-            <li>Project management ensures direction and efficiency.</li>
-            <li>Process Automation drives optimization and prepares for future initiatives.</li>
-            <li>Together, these elements form a continuous cycle of improvement, ensuring that the systems I build aren’t just functional—but timeless, scalable, and crafted with intent.</li>
-          </ul>
+        Each discipline strengthens the others:
+        <ul>
+          <li>Software development creates and refines solutions.</li>
+          <li>Project management ensures direction and efficiency.</li>
+          <li>Process Automation drives optimization and prepares for future initiatives.</li>
+          <li>Together, these elements form a continuous cycle of improvement, ensuring that the systems I build aren’t just functional—but timeless, scalable, and crafted with intent.</li>
+        </ul>
 
-      </p>
-            <button
+      </div>
+      <button
         onClick={scrollToTop}
         className="button"
       >

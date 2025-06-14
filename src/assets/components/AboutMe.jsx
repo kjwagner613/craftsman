@@ -16,18 +16,6 @@ const AboutMe = ({ setSelectedSection }) => {
         <div className="picblock flex">
           <picture>
             <source
-              srcSet="/onlyMe-sm.png"
-              media="(max-width: 1000px)"
-              type="image/png"
-            />
-            <img
-              src="/onlyMe.png"
-              alt="Portrait of Kevin Wagner"
-              className="transform scale-100 sm:scale-75 md:scale-50" style={{ marginRight: "2rem", transform: "scale(.75)" }}
-            />
-          </picture>
-          <picture>
-            <source
               srcSet="/castlebadge-sm.png"
               media="(max-width: 1000px)"
               type="image/png"
@@ -35,7 +23,19 @@ const AboutMe = ({ setSelectedSection }) => {
             <img
               src="/castlebadge.png"
               alt="Castle in a cloud badge illustration"
-              className="transform scale-100 sm:scale-75 md:scale-50"
+              className="transform scale-90 " style={{ marginTop: "1rem" }}
+            />
+          </picture>
+          <picture>
+            <source
+              srcSet="/onlyMe-sm.png"
+              media="(max-width: 1000px)"
+              type="image/png"
+            />
+            <img
+              src="/onlyMe.png"
+              alt="Portrait of Kevin Wagner"
+              className="transform scale-90" style={{ marginLeft: "2.2rem" }}
             />
           </picture>
           <picture>
@@ -47,7 +47,7 @@ const AboutMe = ({ setSelectedSection }) => {
             <img
               src="/KWandJS.png"
               alt="KW and JS logo"
-              className="transform scale-100 sm:scale-75 md:scale-50" style={{ marginLeft: "2rem" }}
+              className="transform scale-100" style={{ marginLeft: "2rem", marginTop: "1.5rem" }}
               onError={(e) => { e.target.onerror = null; e.target.src = "/onlyMe.png"; }}
             />
           </picture></div>
@@ -77,10 +77,10 @@ const AboutMe = ({ setSelectedSection }) => {
               beyond the requirements. More than just what's expected.
             </span>
           </strong></p>
-          <p>Crafting the parameters you live by.
+        <p>Crafting the parameters you live by.
         </p>
         <p className="text-left">After all, you can always scale back</p>
-       
+
 
         <button
           onClick={handleClick}

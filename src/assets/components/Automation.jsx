@@ -21,7 +21,7 @@ const Automation = ({ selected }) => {
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1>Automation</h1>
-      <p className="mt-2 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
+      <div className="mt-2 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
         <h2>Business Process Automation</h2>
         <p>Technology should simplify work, not complicate it. Throughout my career, I have been the go-to problem solver, ensuring that processes are optimized, systems are intuitive, and businesses operate with efficiency.</p>
         <h2>History in Automation</h2>
@@ -38,7 +38,7 @@ const Automation = ({ selected }) => {
           <li>- <strong>CPIM PMO Metric Presentations</strong> → Created automated reporting pipelines for executive visibility.</li>
           <li>- <strong>Client Access for Product Development</strong> → Designed secure portals to enhance customer collaboration.</li>
         </ul>
-      </p>
+      </div>
       <button
         onClick={scrollToTop}
         className="button"

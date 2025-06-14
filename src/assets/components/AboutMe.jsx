@@ -13,11 +13,18 @@ const AboutMe = ({ setSelectedSection }) => {
       className="fitems-center justify-center"
     >
       <div className="w-full mx-auto px-4 text-center" style={{ maxWidth: "var(--max-width)" }}>
-        <img
-          src="/meandcastle.png"
-          alt="Profile"
-          className="castleAndMe w-24 h-auto shadow-lg mb-4 "
-        />
+        <picture>
+          <source
+            srcSet="/meandcastle-small.png"
+            media="(max-width: 900px)"
+            type="image/png"
+          />
+          <img
+            src="/meandcastle.png"
+            alt="Pic of me and Castle on a Cloud"
+            className="mb-8 transform scale-100 sm:scale-75 md:scale-50"
+          />
+        </picture>
         <h1 className="">Hello, I'm Kevin Wagner</h1>
         <h1 className="text-center">First, just a little about me</h1>
         <div className="mt-2 text-justify" style={{ maxWidth: "var(--max-width)" }}>

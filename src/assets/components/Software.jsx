@@ -20,7 +20,7 @@ const Software = ({ selected }) => {
   return (
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out 
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
-      <h1>Software</h1>
+      <h1>Software Development</h1>
       <p className="mt-5 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
         Software development is a natural evolution of my career—a way to solve problems, refine systems, and empower people through technology. Years spent supporting businesses, managing projects, and automating workflows have reinforced one truth: code is more than syntax—it’s the bridge between vision and execution. Regardless of the platform or industry, Software drives transformation, scales solutions, and turns ideas into reality.
         My experience has honed the ability to balance precision with adaptability, ensuring projects meet deadlines, deliver value, and optimize performance. But beyond efficiency, I believe in craftsmanship—writing code with clarity, consideration, and patience, always keeping the end goal in mind.

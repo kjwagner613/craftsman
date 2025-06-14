@@ -10,36 +10,77 @@ const AboutMe = ({ setSelectedSection }) => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.7, ease: 'easeInOut' }}
-      className="fitems-center justify-center"
+      className="flex items-center justify-center"
     >
-      <div className="w-full mx-auto px-4 text-center" style={{ maxWidth: "var(--max-width)" }}>
-        <picture>
-          <source
-            srcSet="/meandcastle-small.png"
-            media="(max-width: 900px)"
-            type="image/png"
-          />
-          <img
-            src="/meandcastle.png"
-            alt="Pic of me and Castle on a Cloud"
-            className="mb-8 transform scale-100 sm:scale-75 md:scale-50"
-          />
-        </picture>
-        <h1 className="">Hello, I'm Kevin Wagner</h1>
-        <h1 className="text-center">First, just a little about me</h1>
-        <div className="mt-2 text-justify" style={{ maxWidth: "var(--max-width)" }}>
-          <h4>Professionally:</h4>
+      <div className="w-full px-4 text-center" style={{ maxWidth: "var(--max-width)" }}>
+        <div className="picblock flex">
+          <picture>
+            <source
+              srcSet="/onlyMe-sm.png"
+              media="(max-width: 1000px)"
+              type="image/png"
+            />
+            <img
+              src="/onlyMe.png"
+              alt="Portrait of Kevin Wagner"
+              className="transform scale-100 sm:scale-75 md:scale-50" style={{ marginRight: "2rem", transform: "scale(.75)" }}
+            />
+          </picture>
+          <picture>
+            <source
+              srcSet="/castlebadge-sm.png"
+              media="(max-width: 1000px)"
+              type="image/png"
+            />
+            <img
+              src="/castlebadge.png"
+              alt="Castle in a cloud badge illustration"
+              className="transform scale-100 sm:scale-75 md:scale-50"
+            />
+          </picture>
+          <picture>
+            <source
+              srcSet="/KWandJS-sm.png"
+              media="(max-width: 1000px)"
+              type="image/png"
+            />
+            <img
+              src="/KWandJS.png"
+              alt="KW and JS logo"
+              className="transform scale-100 sm:scale-75 md:scale-50" style={{ marginLeft: "2rem" }}
+              onError={(e) => { e.target.onerror = null; e.target.src = "/onlyMe.png"; }}
+            />
+          </picture></div>
+        <h1 className="text-justify">“If you have built castles in the air, your work need not be lost; that is where they should be.
+          Now put the foundations under them.”</h1>
+        <h1 className="text-justify">
+          ― Henry David Thoreau</h1>
+        <br /><br />
 
-          <p>I'm a methodical problem-solver, passionate about tech, Software development, and optimizing workflows. Over the past 30 years, I’ve built a reputation for resourcefulness, clarity in troubleshooting, and a strong focus on scalable solutions. Whether refining backend architecture, troubleshooting cross-platform compatibility, or designing user-friendly interfaces, I thrive on finding efficient, reliable answers.</p>
-          <p>Beyond technical expertise, I value collaboration and knowledge-sharing. I enjoy helping others streamline their environments, ensuring that tech works for people—not against them. My work spans full-stack development, network configurations, cloud integration, and Automation, and I take pride in creating audit-proof, business-aligned solutions that empower both teams and individuals.</p>
-          <p>Outside of code and configurations, I approach challenges with persistence and logic, always striving for structured, user-focused outcomes. If you're working on something ambitious, complex, or just frustrating, I’m the kind of person who finds a way to make it work—and make it make sense.</p>
-
-          <h4>Personally: </h4>
-          <p>I do my best to see the best version of people and situations—and support that realization. The comedy of life is that sometimes the opposite unfolds, and when it does, I try to find humor in it rather than disappointment. I believe the drama between us is just a distraction, clouding our vision to the immense gift of it all.</p>
-          <p>I used to think golf and relationships would always be the most frustrating challenges in life—until I decided to learn to code. That taught me an entirely new definition of frustration. 😆 Still, I push forward, knowing that learning, breaking things down, and understanding each component at its core matters more than just recalling an expected outcome.</p>
-          <p>I'm loyal, and I guess I have an old-school sense of right. I believe that true learning comes not just from knowing what something does, but understanding why it does. And finally—they say everything we need to know, we learned in kindergarten. I say kindergarten—and the sunscreen song.</p>
-
-        </div>
+        <p className="text-justify">This quote resonates deeply with me because I believe in starting with possibility. Instead of asking, "What can I build within these constraints?", I ask, "What is the best solution here?" From there, I examine boundaries, explore feasibility, and refine. Through <strong>iterative design</strong> we will achieve results that can far exceed expectations.</p>
+        <h1 className="">Hello, I'm Kevin </h1>
+        <p className="text-justify">
+          It’s all about reaching beyond the standard, testing the limits of what’s possible, learning from every challenge, and <strong>charging forward toward excellence — <span>&nbsp;</span>
+            <span
+              style={{
+                color: "#FFD700",
+                fontSize: "1.2em",
+                fontWeight: "bold",
+                textShadow: `
+                  -1px -1px 0 #333,
+                  1px -1px 0 #333,
+                  -1px 1px 0 #333,
+                  1px 1px 0 #333
+                `
+              }}
+            >
+              beyond the requirements. More than just what's expected.
+            </span>
+          </strong></p>
+          <p>Crafting the parameters you live by.
+        </p>
+        <p className="text-left">After all, you can always scale back</p>
+       
 
         <button
           onClick={handleClick}

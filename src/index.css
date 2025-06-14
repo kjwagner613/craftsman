@@ -87,13 +87,10 @@ a:hover {
 }
 
 body {
-  @apply min-h-screen min-w-[320px];
+  /* @apply min-h-screen min-w-[320px]; */
   background:
     linear-gradient( #1870d5, #87ceeb) no-repeat;
-  margin: 0;
-  font-family: var(--font-main);
-  font-size: var(--font-size-body);
-  color: var(--text-color-dark);
+   
 }
 
 h1 {

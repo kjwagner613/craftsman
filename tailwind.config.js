@@ -2,17 +2,19 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-            fontFamily: {
+      screens: {
+        sm: "500px",
+        md: "900px",
+      },
+      fontFamily: {
         sans: ['Lato', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
         script: ['Playball', 'cursive'],
       },
-            transitionProperty: {
+      transitionProperty: {
         'height': 'height', // Enables smooth height animation
         'opacity': 'opacity', // Enables fade-in/out effects
       },
-
-
     },
   },
   safelist: [

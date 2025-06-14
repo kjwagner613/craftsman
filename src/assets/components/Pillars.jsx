@@ -7,9 +7,8 @@ const Pillars = ({ setSelectedSection }) => (
     <img
       src="/pillars3.png"
       alt="Business Pillars"
-      className=" mb-8"
+      className="mb-8 transform scale-100 sm:scale-75 md:scale-50"
     />
-
     {/* Invisible click targets */}
     <div
       className="absolute top-[86.5%] left-[17%] w-[600px] h-[35px] cursor-pointer z-30"

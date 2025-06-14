@@ -51,6 +51,7 @@
 
   @media (max-width: 800px) {
     transform: scale(0.5);
+    align-self: center;
   }
 }
 

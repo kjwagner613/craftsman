@@ -13,8 +13,13 @@ const AboutMe = ({ setSelectedSection }) => {
       className="flex items-center justify-center"
     >
       <div className="w-full px-4 text-center" style={{ maxWidth: "var(--max-width)" }}>
-        <div className="picblock flex">
+        <div className="picblock flex column items-center justify-center">
           <picture>
+            <source
+              srcSet="/castlebadge-xs.png"
+              media="(max-width: 750px)"
+              type="image/png"
+            />
             <source
               srcSet="/castlebadge-sm.png"
               media="(max-width: 1000px)"
@@ -28,6 +33,11 @@ const AboutMe = ({ setSelectedSection }) => {
           </picture>
           <picture>
             <source
+              srcSet="/onlyMe-xs.png"
+              media="(max-width: 750px)"
+              type="image/png"
+            />
+            <source
               srcSet="/onlyMe-sm.png"
               media="(max-width: 1000px)"
               type="image/png"
@@ -39,6 +49,11 @@ const AboutMe = ({ setSelectedSection }) => {
             />
           </picture>
           <picture>
+            <source
+              srcSet="/KWandJS-xs.png"
+              media="(max-width: 750px)"
+              type="image/png"
+            />
             <source
               srcSet="/KWandJS-sm.png"
               media="(max-width: 1000px)"

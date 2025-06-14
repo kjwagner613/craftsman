@@ -69,6 +69,7 @@
 .castleAndMe {
   @media (max-width: 950px) {
     transform: scale(0.5);
+    align-self: center;
   }
  
 

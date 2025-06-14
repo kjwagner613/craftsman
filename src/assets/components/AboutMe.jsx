@@ -17,7 +17,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <picture>
             <source
               srcSet="/castlebadge-xs.png"
-              media="(max-width: 750px)"
+              media="(max-width: 700px)"
               type="image/png"
             />
             <source
@@ -34,7 +34,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <picture>
             <source
               srcSet="/onlyMe-xs.png"
-              media="(max-width: 750px)"
+              media="(max-width: 700px)"
               type="image/png"
             />
             <source
@@ -51,7 +51,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <picture>
             <source
               srcSet="/KWandJS-xs.png"
-              media="(max-width: 750px)"
+              media="(max-width: 700px)"
               type="image/png"
             />
             <source
@@ -75,7 +75,7 @@ const AboutMe = ({ setSelectedSection }) => {
         <p className="text-justify">This quote resonates deeply with me because I believe in starting with possibility. Instead of asking, "What can I build within these constraints?", I ask, "What is the best solution here?" From there, I examine boundaries, explore feasibility, and refine. Through <strong>iterative design</strong> we will achieve results that can far exceed expectations.</p>
         <h1 className="">Hello, I'm Kevin </h1>
         <p className="text-justify">
-          It’s all about reaching beyond the standard, testing the limits of what’s possible, learning from every challenge, and <strong>charging forward toward excellence — <span>&nbsp;</span>
+          It’s all about reaching beyond the standard, testing the limits of what is accepted, continually challenging yourself. <strong>Excellence through continual improvement. — <span>&nbsp;</span>
             <span
               style={{
                 color: "#FFD700",
@@ -89,17 +89,16 @@ const AboutMe = ({ setSelectedSection }) => {
                 `
               }}
             >
-              beyond the requirements. More than just what's expected.
+              <p className="text-center">Look beyond requirements, to history.</p>
+              <p className="text-center">The experiences that shaped the need.</p>
+              <p className="text-center">Always with the end goal in mind.</p>
             </span>
           </strong></p>
-        <p>Crafting the parameters you live by.
-        </p>
-        <p className="text-left">After all, you can always scale back</p>
-
-
+        <p>Craftmanship.</p>
+        <p className="text-left">After all, you can always scale back.</p>
         <button
           onClick={handleClick}
-          className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded transition-all duration-500"
+          className="mt-[2rem] px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded transition-all duration-500"
         >
           Click here for my portfolio
         </button>

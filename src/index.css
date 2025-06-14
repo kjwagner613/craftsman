@@ -51,7 +51,8 @@
 
   @media (max-width: 800px) {
     transform: scale(0.5);
-    align-self: center;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
   }
 }
 
@@ -66,14 +67,14 @@
   }
 }
 
-.castleAndMe {
-  @media (max-width: 950px) {
+@media (max-width: 950px) {
+  .castleAndMe {
     transform: scale(0.5);
-    align-self: center;
+    display: block; /* Ensures it behaves like an image */
+    margin: 0 auto; /* Centers it horizontally */
   }
- 
-
 }
+
 
 
 a {

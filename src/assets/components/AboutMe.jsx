@@ -12,16 +12,16 @@ const AboutMe = ({ setSelectedSection }) => {
       transition={{ duration: 0.7, ease: 'easeInOut' }}
       className="fitems-center justify-center"
     >
-      <div className="w-full max-w-[900px] mx-auto px-4 text-center">
+      <div className="w-full mx-auto px-4 text-center" style={{ maxWidth: "var(--max-width)" }}>
         <img
           src="/meandcastle.png"
           alt="Profile"
-          className="w-24 h-auto shadow-lg mb-4 mx-auto"
+          className="castleAndMe w-24 h-auto shadow-lg mb-4 "
         />
-        <h1 className="">Hi, I'm Kevin Wagner</h1>
-        <h1 className="text-center">A Little About Me</h1>
-        <div className="mt-2 text-justify max-w-[800px]">
-          <h2>Professionally:</h2>
+        <h1 className="">Hello, I'm Kevin Wagner</h1>
+        <h1 className="text-center">First, just a little about me</h1>
+        <div className="mt-2 text-justify" style={{ maxWidth: "var(--max-width)" }}>
+          <h4>Professionally:</h4>
 
           <p>I'm a methodical problem-solver, passionate about tech, Software development, and optimizing workflows. Over the past 30 years, I’ve built a reputation for resourcefulness, clarity in troubleshooting, and a strong focus on scalable solutions. Whether refining backend architecture, troubleshooting cross-platform compatibility, or designing user-friendly interfaces, I thrive on finding efficient, reliable answers.</p>
           <p>Beyond technical expertise, I value collaboration and knowledge-sharing. I enjoy helping others streamline their environments, ensuring that tech works for people—not against them. My work spans full-stack development, network configurations, cloud integration, and Automation, and I take pride in creating audit-proof, business-aligned solutions that empower both teams and individuals.</p>

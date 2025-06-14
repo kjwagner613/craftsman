@@ -24,10 +24,11 @@
   --border-radius: 8px;
   --font-main: "Lato", sans-serif;
   --font-secondary: "Playball", cursive;
-  --font-size-titles: 3rem;
-  --font-size-headers: 1.8rem;
+  --font-size-titles: 2.5rem;
+  --font-size-headers: 1.9rem;
   --font-size-body: 1.2rem;
   --font-size-small: 0.9rem;
+  --max-width: 1000px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -47,8 +48,10 @@
   top: -15%;
   left: -500px; /* Start off-screen */
   animation: moveCloud 50s cubic-bezier(.15,.53,.32,.71) infinite;
-  /* z-index: -10; */
-  /* background-color: red; */
+
+  @media (max-width: 800px) {
+    transform: scale(0.5);
+  }
 }
 
 @keyframes moveCloud {
@@ -60,6 +63,14 @@
     left: 100%;
     opacity: 1;
   }
+}
+
+.castleAndMe {
+  @media (max-width: 950px) {
+    transform: scale(0.5);
+  }
+ 
+
 }
 
 
@@ -77,7 +88,7 @@ body {
   background:
     linear-gradient( #1870d5, #87ceeb) no-repeat;
   margin: 0;
-  font-family: var(--font-secondary);
+  font-family: var(--font-main);
   font-size: var(--font-size-body);
   color: var(--text-color-dark);
 }
@@ -89,14 +100,14 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-main);
+  font-family: var(--font-secondary);
   font-size: var(--font-size-headers);
   line-height: 1.2;
 
 }
 
 h4 {
-  font-family: var(--font-cursive);
+  font-family: var(--font-secondary);
   font-size: var(--font-size-headers);
   line-height: 1.4;
   color: var(--text-color-dark);
@@ -143,4 +154,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.project-link a {
+  color: 	black;
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow:  -1px -1px 0 rgb(23, 180, 228),
+                  1px -1px 0 rgb(23, 180, 228),
+                  -1px 1px 0 rgb(23, 180, 228),
+                  1px 1px 0 rgb(23, 180, 228);
+  transition: color 0.3s ease;
 }

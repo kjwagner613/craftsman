@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const ProjectManagement = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -16,8 +20,8 @@ const ProjectManagement = ({ selected }) => {
   return (
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
-      <h1 className="text-3xl font-bold text-center">Project Management</h1>
-      <div className="mt-5 mb-[15vh] text-lg text-justify max-w-[800px]">
+      <h1>Project Management</h1>
+      <div className="mt-5 mb-[15vh] text-lg text-justify" style={{ maxWidth: "var(--max-width)" }}>
         <h2>Project Management & Software Development</h2>
         <p>Project management is the bridge between vision and execution, integrating people, processes, and technology to achieve a shared objective. Having worked alongside top industry professionals, I’ve learned that no two projects are alike—each requires agility, strategic planning, and proactive risk mitigation to ensure successful outcomes.</p>
 
@@ -51,6 +55,12 @@ const ProjectManagement = ({ selected }) => {
           <li>Oversaw Microsoft Copilot rollout, ensuring smooth adoption across the organization.</li>
         </ul>
       </div>
+          <button
+                  onClick={scrollToTop}
+                  className="button"
+          >
+                  Back to Top
+          </button>
     </div>
   );
 };

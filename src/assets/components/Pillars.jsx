@@ -7,24 +7,24 @@ const Pillars = ({ setSelectedSection }) => (
     <img
       src="/pillars3.png"
       alt="Business Pillars"
-      className="w-full h-auto mb-8"
+      className=" mb-8"
     />
 
     {/* Invisible click targets */}
     <div
-      className="absolute top-[86.5%] left-[3%] w-[600px] h-[35px] cursor-pointer z-30"
+      className="absolute top-[86.5%] left-[17%] w-[600px] h-[35px] cursor-pointer z-30"
       onClick={() => setSelectedSection('foundation')}
     />
     <div
-      className="absolute top-[30%] left-[10%] w-[120px] h-[225px] cursor-pointer z-30"
+      className="absolute top-[30%] left-[22%] w-[120px] h-[225px] cursor-pointer z-30"
       onClick={() => setSelectedSection('software')}
     />
     <div
-      className="absolute top-[30%] left-[41%] w-[120px] h-[225px] cursor-pointer z-30"
+      className="absolute top-[30%] left-[44%] w-[120px] h-[225px] cursor-pointer z-30"
       onClick={() => setSelectedSection('projectManagement')}
     />
     <div
-      className="absolute top-[30%] left-[72%] w-[120px] h-[225px] cursor-pointer z-30"
+      className="absolute top-[30%] left-[65%] w-[120px] h-[225px] cursor-pointer z-30"
       onClick={() => setSelectedSection('automation')}
     />
   </div>

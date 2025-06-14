@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen w-full bg-gradient-to-b from-[#1870d5] via-[#4a90e2] to-[#87ceeb] flex flex-col">
+      <div className="min-h-screen w-full flex flex-col">
         {/* AboutMe overlay: fades out when Portfolio is clicked */}
         <AnimatePresence initial={false}>
           {selectedSection === "AboutMe" && (
@@ -80,7 +80,7 @@ function App() {
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <Automation selected={true} />
                 </>
-              )} />}
+              )}
             </motion.div>
           )}
         </AnimatePresence>

@@ -16,53 +16,53 @@ const AboutMe = ({ setSelectedSection }) => {
         <div className="picblock flex column items-center justify-center">
           <picture>
             <source
-              srcSet="/castlebadge-xs.png"
+              srcSet="/castlebadge-100-wBevel.png"
               media="(max-width: 700px)"
               type="image/png"
             />
             <source
-              srcSet="/castlebadge-sm.png"
+              srcSet="/castlebadge-200-wBevel.png"
               media="(max-width: 1000px)"
               type="image/png"
             />
             <img
-              src="/castlebadge.png"
+              src="/castlebadge-300-wBevel.png"
               alt="Castle in a cloud badge illustration"
-              className="transform scale-90 " style={{ marginTop: "1rem" }}
+              className="" style={{ transform: "scale(0.8)", marginTop: "1rem" }}
             />
           </picture>
           <picture>
             <source
-              srcSet="/onlyMe-xs.png"
+              srcSet="/kw-BevelPic-100.png"
               media="(max-width: 700px)"
               type="image/png"
             />
             <source
-              srcSet="/onlyMe-sm.png"
+              srcSet="/kw-BevelPic-200.png"
               media="(max-width: 1000px)"
               type="image/png"
             />
             <img
-              src="/onlyMe.png"
+              src="/kw-BevelPic-300.png"
               alt="Portrait of Kevin Wagner"
-              className="transform scale-90" style={{ marginLeft: "2.2rem" }}
+              className="" style={{ transform: "scale(0.95)", marginLeft: "2.2rem" }}
             />
           </picture>
           <picture>
             <source
-              srcSet="/KWandJS-xs.png"
+              srcSet="/logo-kw-100-matt.png"
               media="(max-width: 700px)"
               type="image/png"
             />
             <source
-              srcSet="/KWandJS-sm.png"
+              srcSet="/logo-kw-200-matt.png"
               media="(max-width: 1000px)"
               type="image/png"
             />
             <img
-              src="/KWandJS.png"
+              src="/logo-kw-300-matt.png"
               alt="KW and JS logo"
-              className="transform scale-100" style={{ marginLeft: "2rem", marginTop: "1.5rem" }}
+              className="transform scale-120" style={{ marginLeft: "3rem", marginTop: "1.5rem" }}
               onError={(e) => { e.target.onerror = null; e.target.src = "/onlyMe.png"; }}
             />
           </picture></div>
@@ -72,10 +72,25 @@ const AboutMe = ({ setSelectedSection }) => {
           ― Henry David Thoreau</h1>
         <br /><br />
 
-        <p className="text-justify">This quote resonates deeply with me because I believe in starting with possibility. Instead of asking, "What can I build within these constraints?", I ask, "What is the best solution here?" From there, I examine boundaries, explore feasibility, and refine. Through <strong>iterative design</strong> we will achieve results that can far exceed expectations.</p>
+        <div
+          className="text-justify"
+          style={{
+            fontSize: "1.2rem",
+            fontFamily: "var(--font-main)",
+            lineHeight: 1.6
+          }}
+        >
+          This quote resonates deeply with me because I believe in starting with possibility. Instead of asking, "What can I build within these constraints?", I ask, "What is the best solution here?" From there, I examine boundaries, explore feasibility, and refine. Through <strong>iterative design</strong> we will achieve results that can far exceed expectations.
+        </div>
         <h1 className="">Hello, I'm Kevin </h1>
-        <p className="text-justify">
-          It’s all about reaching beyond the standard, testing the limits of what is accepted, continually challenging yourself. <strong>Excellence through continual improvement. — <span>&nbsp;</span>
+        <div
+          className="text-justify"
+          style={{
+            fontSize: "1.2rem",
+            fontFamily: "var(--font-main)",
+            lineHeight: 1.6
+          }}
+        >It’s all about reaching beyond the standard, testing the limits of what is accepted, continually challenging yourself. <strong>Excellence through continual improvement. — <span>&nbsp;</span>
             <span
               style={{
                 color: "#FFD700",
@@ -93,8 +108,8 @@ const AboutMe = ({ setSelectedSection }) => {
               <p className="text-center">The experiences that shaped the need.</p>
               <p className="text-center">Always with the end goal in mind.</p>
             </span>
-          </strong></p>
-        <p>Craftmanship.</p>
+          </strong></div>
+        <h1>Craftmanship.</h1>
         <p className="text-left">After all, you can always scale back.</p>
         <button
           onClick={handleClick}

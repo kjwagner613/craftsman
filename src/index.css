@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
-@font-face {
-  font-family: 'Playball';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playball/v21/TK3gWksYAxQ7jbsKcg8Eneo.woff2) format('woff2');
-  unicode-range: U+0000-00FF;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --primary-green: #6B8E23;
   --secondary-brown: #8B4513;
@@ -24,21 +11,57 @@
   --border-radius: 8px;
   --font-main: "Lato", sans-serif;
   --font-secondary: "Playball", cursive;
-  --font-size-titles: 2.5rem;
-  --font-size-headers: 1.9rem;
-  --font-size-body: 1.2rem;
-  --font-size-small: 0.9rem;
+  --font-marquee:  "Aoora", sans-serif;
+  --font-size-titles: 2rem;
+  --font-size-headers: 1.6rem;
+  --font-size-body: 1.0rem;
+  --font-size-small: 0.7rem;
   --max-width: 1000px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: 'Playball';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playball/v21/TK3gWksYAxQ7jbsKcg8Eneo.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+ 
+@font-face {
+    font-family: 'Aoora';
+    font-weight: normal; /* Regular weight */
+    font-style: normal; /* Regular style */
+    src: url('./../public/fonts/aoora-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Aoora';
+    font-weight: normal; /* Regular weight */
+    font-style: italic; /* Italic style */
+    src: url('./../public/fonts/aoora-italic.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .test-playball {
   font-family: 'Playball', cursive !important;
   font-size: 2rem;
 
 }
+
+#root > div > div > div > div:nth-child(8) > strong > span:nth-child(2) > p:nth-child(1) {
+  font-size: 1.5rem !Important;
+
+}
+
 
 ul li {
   margin-bottom: 8px; /* Adjust spacing as needed */
@@ -111,6 +134,14 @@ h2 {
 
 }
 
+h3 {
+  font-family: var(--font-marquee);
+  font-size: var(--font-size-headers);
+  line-height: 1.3;
+  color: var(--text-color-dark);
+  font-weight: 600;
+}
+
 h4 {
   font-family: var(--font-secondary);
   font-size: var(--font-size-headers);
@@ -122,11 +153,20 @@ h4 {
 
 
 
+
 p {
   font-family: var(--font-main);
   font-size: var(--font-size-body);
   line-height: 1.6;
 
+}
+
+.textShadow {
+  text-shadow:
+                  -1px -1px 0 #333,
+                  1px -1px 0 #333,
+                  -1px 1px 0 #333,
+                  1px 1px 0 #333;
 }
 
 button {

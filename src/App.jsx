@@ -80,7 +80,7 @@ function App() {
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <Automation selected={true} />
                 </>
-              )} />}
+              )}
             </motion.div>
           )}
         </AnimatePresence>

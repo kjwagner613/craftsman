@@ -61,9 +61,9 @@ const AboutMe = ({ setSelectedSection }) => {
             />
             <img
               src="/logo-kw-300-matt.png"
-              alt="KW and JS logo"
+              alt="KW castle on a cloud logo"
               className="transform scale-120" style={{ marginLeft: "3rem", marginTop: "1.5rem" }}
-              onError={(e) => { e.target.onerror = null; e.target.src = "/onlyMe.png"; }}
+              onError={(e) => { e.target.onerror = null; e.target.src = "/kw-BevelPic-100.png"; }}
             />
           </picture></div>
         <h1 className="text-justify">“If you have built castles in the air, your work need not be lost; that is where they should be.
@@ -71,7 +71,10 @@ const AboutMe = ({ setSelectedSection }) => {
         <h1 className="text-justify">
           ― Henry David Thoreau</h1>
         <br /><br />
-
+        <div className="grid inline-grid grid-cols-1">
+          <span className="text-justify font-aoora text-5xl text-gray-600">this is a test</span>
+        </div>
+        <h3>Is this going to work?</h3>
         <div
           className="text-justify"
           style={{
@@ -87,14 +90,14 @@ const AboutMe = ({ setSelectedSection }) => {
           className="text-justify"
           style={{
             fontSize: "1.2rem",
-            fontFamily: "var(--font-main)",
+            fontFamily: "var(--font-marquee)",
             lineHeight: 1.6
           }}
         >It’s all about reaching beyond the standard, testing the limits of what is accepted, continually challenging yourself. <strong>Excellence through continual improvement. — <span>&nbsp;</span>
             <span
               style={{
-                color: "#FFD700",
-                fontSize: "1.2em",
+                color: "white",
+                fontSize: "1.8em",
                 fontWeight: "bold",
                 textShadow: `
                   -1px -1px 0 #333,
@@ -104,13 +107,13 @@ const AboutMe = ({ setSelectedSection }) => {
                 `
               }}
             >
-              <p className="text-center">Look beyond requirements, to history.</p>
-              <p className="text-center">The experiences that shaped the need.</p>
-              <p className="text-center">Always with the end goal in mind.</p>
+              <div className="text-center whitespace-nowrap ">Look beyond requirements, &rarr; to history.</div>
+              <div className="text-center">The experiences that shaped the need.</div>
+              <div className="text-center text-4xl">Always with the end goal in mind.</div>
             </span>
           </strong></div>
-        <h1>Craftmanship.</h1>
-        <p className="text-left">After all, you can always scale back.</p>
+        <h1 className="font-aoora">Craftmanship.</h1>
+        <p className="text-left font-aoora">After all, you can always scale back.</p>
         <button
           onClick={handleClick}
           className="mt-[2rem] px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded transition-all duration-500"

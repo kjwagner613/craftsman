@@ -10,6 +10,7 @@ module.exports = {
         sans: ['Lato', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
         script: ['Playball', 'cursive'],
+        aoora: ['Aoora', 'sans-serif'],
       },
       transitionProperty: {
         'height': 'height', // Enables smooth height animation

@@ -10,6 +10,8 @@ import Contact from "./assets/components/Contact";
 import Software from "./assets/components/Software";
 import Automation from "./assets/components/Automation";
 import ProjectManagement from "./assets/components/ProjectManagement";
+import Navbar from "./assets/components/navbar";
+
 
 function App() {
   const [selectedSection, setSelectedSection] = useState("AboutMe");
@@ -22,73 +24,68 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen w-full flex flex-col">
-        {/* AboutMe overlay: fades out when Portfolio is clicked */}
-        <AnimatePresence initial={false}>
+      <Navbar setSelectedSection={setSelectedSection} />
+      <div className="pt-20 flex flex-col w-full min-h-screen">
+
+        {/* Initial sections */}
+        <div className="w-full flex flex-col items-center">
           {selectedSection === "AboutMe" && (
-            <AboutMe
-              key="about"
-              setSelectedSection={setSelectedSection}
-            />
+            <AboutMe setSelectedSection={setSelectedSection} />
           )}
-        </AnimatePresence>
+          {selectedSection === "Contact" && (
+            <Contact selected={true} />
+          )}
+        </div>
 
-        {/* Main Content */}
-
-
-        <AnimatePresence initial={false}>
-          {selectedSection !== "AboutMe" && (
+        {/* Pillars and sub-sections */}
+        {selectedSection !== "AboutMe" && selectedSection !== "Contact" && (
+          <AnimatePresence mode="wait">
             <motion.div
               key={selectedSection}
               className="w-full flex flex-col items-center z-50 mt-[1in]"
-              initial={{ y: "100vh", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               exit={{ y: "100vh", opacity: 0 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
             >
               <Pillars setSelectedSection={setSelectedSection} />
-              {selectedSection === "header" && (
+
+              {selectedSection === "Header" && (
                 <>
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <Header selected={true} />
                 </>
               )}
 
-              {selectedSection === "software" && (
+              {selectedSection === "Software" && (
                 <>
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <Software selected={true} />
                 </>
               )}
 
-              {selectedSection === "foundation" && (
+              {selectedSection === "Foundation" && (
                 <>
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <Foundation selected={true} />
                 </>
               )}
 
-              {selectedSection === "projectManagement" && (
+              {selectedSection === "ProjectManagement" && (
                 <>
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <ProjectManagement selected={true} />
                 </>
               )}
 
-              {selectedSection === "automation" && (
+              {selectedSection === "Automation" && (
                 <>
                   {window.scrollTo({ top: 0, behavior: "smooth" })}
                   <Automation selected={true} />
                 </>
               )}
             </motion.div>
-          )}
-        </AnimatePresence>
-        {/* Other Sections */}
-        {selectedSection === "contact" && (
-          <div className="w-full max-w-[1300px] min-h-[500px] flex flex-col items-center p-2">
-            <Contact selected={true} />
-          </div>
+          </AnimatePresence>
         )}
       </div>
     </>

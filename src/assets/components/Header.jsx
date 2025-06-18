@@ -19,7 +19,7 @@ const Header = ({ selected }) => {
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center" style={{ maxWidth: "var(--max-width)" }}>
-      <div className={`w-full px-4 text-center transition-opacity transition-transform duration-700 ease-in-out
+      <div className={`w-full   text-center transition-opacity transition-transform duration-700 ease-in-out
         ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
 
         <div className="mt-2 text-justify" style={{ maxWidth: "var(--max-width)" }}>

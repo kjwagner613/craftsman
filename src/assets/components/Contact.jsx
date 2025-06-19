@@ -101,27 +101,28 @@ const Contact = ({ selected }) => {
             </div>
           </div>
           {/* Spacer row break */}
-          <div className="md:col-span-3 space-y-4 mt-8">
+          <div className="mflex flex-col w-1/2 ml-[50%] transform -translate-x-1/2 border-yellow-300 border-3 rounded-3g">
             <h3 className="text-xl font-semibold">Send me a message...</h3>
             <p>If you prefer, you can also reach out to me using the form below:</p>
 
             {/* Contact Form */}
             <fieldset className="space-y-4">
               <legend className="sr-only">Contact Form</legend>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex flex-col leading-[2]">
-                  <label htmlFor="name" className="mb-1">Name:</label>
-                  <input type="text" name="name" id="name" required placeholder="Your name" className="input" />
+              <div className="">
+                <div className="grid md:grid-cols-2 gap-4 w-1/2">
+                  <div className="flex flex-col leading-[2]">
+                    <label htmlFor="name" className="mb-1">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="Your name" className="input" />
+                  </div>
+                  <div className="flex flex-col leading-[2]">
+                    <label htmlFor="email" className="mb-1">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="you@example.com" className="input" />
+                  </div>
                 </div>
                 <div className="flex flex-col leading-[2]">
-                  <label htmlFor="email" className="mb-1">Email:</label>
-                  <input type="email" name="email" id="email" required placeholder="you@example.com" className="input" />
+                  <label htmlFor="message" className="mb-1">Message:</label>
+                  <textarea name="message" id="message" required placeholder="Your message..." className="input" rows="5" />
                 </div>
-              </div>
-              <div className="flex flex-col leading-[2]">
-                <label htmlFor="message" className="mb-1">Message:</label>
-                <textarea name="message" id="message" required placeholder="Your message..." className="input" rows="5" />
               </div>
             </fieldset>
 

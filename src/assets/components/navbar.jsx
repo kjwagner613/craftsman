@@ -6,7 +6,7 @@ const Navbar = ({ setSelectedSection }) => (
           onClick={() => setSelectedSection("AboutMe")}
           className="bg-transparent border-none text-white underline hover:text-blue-400 cursor-pointer p-0 m-0"
         >
-          About Me
+          Home
         </button>
       </li>
       <li>

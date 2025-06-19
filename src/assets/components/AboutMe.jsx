@@ -11,7 +11,7 @@ const AboutMe = ({ setSelectedSection }) => {
       transition={{ duration: 0.7, ease: 'easeInOut' }}
       className="flex items-center justify-center"
     >
-      <div className="w-full   text-center" style={{ maxWidth: "var(--max-width)" }}>
+      <div className="w-3/4 text-center">
         <div className="flex flex-col items-center mb-8">
           <div className="picblock flex column items-center justify-center">
             <picture>
@@ -45,7 +45,7 @@ const AboutMe = ({ setSelectedSection }) => {
               <img
                 src="/kw-BevelPic-300.png"
                 alt="Portrait of Kevin Wagner"
-                className="" style={{ transform: "scale(0.95)", marginLeft: "2.2rem" }}
+                className="" style={{ marginTop: "3vh", transform: "scale(0.95)", marginLeft: "2.2rem" }}
               />
             </picture>
             <picture>
@@ -76,24 +76,23 @@ const AboutMe = ({ setSelectedSection }) => {
           <br /><br />
 
           <div
-            className="text-justify"
+            className="text-justify w-4/5"
             style={{
               fontSize: "1.2rem",
               fontFamily: "var(--font-main)",
-              lineHeight: 1.6
+              lineHeight: 1.6,
             }}
           >
-            This quote resonates deeply with me because I believe in starting with possibility. Instead of asking, "What can I build within these constraints?", I ask, "What is the best solution here?" From there, I examine boundaries, explore feasibility, and refine. Through <strong>iterative design</strong> we will achieve results that can far exceed expectations.
+            This quote resonates deeply with me, I have always encouraged people to be creative beyond reason. Start with that and let's see if I can put the foundations required for them to go for it. It is less and less now, our capabilities have grown so much.  I still have that thing pushing me to provide and deliver no matter the obstacles. Anything worth achieving takes time, focused persistent effort, and more time.
           </div>
-          <h1 className="">Hello, I'm Kevin </h1>
+          <h1 className="">Hello, I'm Kevin Wagner</h1>
           <div
-            className="text-justify"
+            className="text-justify w-4/5"
             style={{
               fontSize: "1.2rem",
               fontFamily: "var(--font-main)",
-
             }}
-          ><div className="leading-[3] ">It’s all about reaching beyond the standard, testing the limits of what is accepted, continually challenging yourself. <br></br><strong>Excellence through continual improvement. — <span>&nbsp;</span></strong></div>
+          ><div className="leading-[3] ">It’s all about reaching beyond the standard, pushing the limits of what you know, getting uncomfortable and challenging yourself. <br></br><strong>Excellence through continuous improvement. — <span>&nbsp;</span></strong></div>
             <span
               style={{
                 color: "white",
@@ -110,9 +109,9 @@ const AboutMe = ({ setSelectedSection }) => {
             </span>
 
             <div className="flex flex-col mt-6 leading-[2]">
-              <div className="font-[var(--font-main)] text-lg text-center whitespace-nowrap ">Look beyond requirements, &rarr; to history.</div>
-              <div className="font-[var(--font-main)] text-center">The experiences that shaped the need.</div>
-              <div className="font-[var(--font-main)] text-center text-4xl">Always with the end goal in mind.</div>
+              <p className="font-[var(--font-main)] text-center whitespace-nowrap ">Look beyond requirements, &rarr; to history.</p>
+              <p className="font-[var(--font-main)] text-center">The experiences that shaped the need.</p>
+              <p className="font-[var(--font-main)] text-center">Always with the end goal in mind.</p  >
             </div>
           </div>
           <div className="" style={{ fontFamily: "var(--font-secondary)", fontSize: "2.5rem" }}>
@@ -128,6 +127,7 @@ const AboutMe = ({ setSelectedSection }) => {
           >
             Click here for my portfolio
           </button>
+          <p className="w-4/5">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
         </div>
       </div>
     </motion.div>

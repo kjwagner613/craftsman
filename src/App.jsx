@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { createPortal } from "react-dom";
 import "./App.css";
 import "./index.css";
 import AboutMe from "./assets/components/AboutMe";
@@ -24,7 +25,10 @@ function App() {
 
   return (
     <>
-      <Navbar setSelectedSection={setSelectedSection} />
+      {createPortal(
+        <Navbar setSelectedSection={setSelectedSection} />,
+        document.body
+      )}
       <div className="pt-20 flex flex-col w-full min-h-screen">
 
         {/* Initial sections */}

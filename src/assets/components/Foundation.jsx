@@ -34,7 +34,7 @@ const Foundation = ({ selected }) => {
 
         <h4>Bringing It All Together</h4>
 
-        Each discipline strengthens the others:
+        <p>Each discipline strengthens the others:</p>
         <ul>
           <li>Software development creates and refines solutions.</li>
           <li>Project management ensures direction and efficiency.</li>
@@ -45,7 +45,7 @@ const Foundation = ({ selected }) => {
       </div>
       <button
         onClick={scrollToTop}
-        className="button"
+        className="button mt-[-5vh]"
       >
         Back to Top
       </button>

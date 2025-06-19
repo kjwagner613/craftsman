@@ -41,61 +41,65 @@ const Contact = ({ selected }) => {
           </div>
 
           {/* Contact Info Column 1 */}
-          <div className="space-y-2">
-            <label className="font-medium">Email:</label>
-            <div>
-              <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline" style={{
-                fontSize: "1.2rem", fontFamily: "var(--font-main)"
-              }}>
-                kevin.wagner.2024@outlook.com
-              </a>
+          <div className="grid grid-cols-3">
+            <div className="flex flex-col space-y-2">
+              <label className="font-medium">Email:</label>
+              <div>
+                <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline" style={{
+                  fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                }}>
+                  kevin.wagner.2024@outlook.com
+                </a>
+              </div>
+              <label className="font-medium">Phone:</label>
+              <div>
+                <a href="tel:+14582546393" className="text-blue-400 hover:underline" style={{
+                  fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                }}>
+                  (458) 254-6393
+                </a>
+              </div>
             </div>
-            <label className="font-medium">Phone:</label>
-            <div>
-              <a href="tel:+14582546393" className="text-blue-400 hover:underline" style={{
-                fontSize: "1.2rem", fontFamily: "var(--font-main)"
-              }}>
-                (458) 254-6393
-              </a>
+
+
+            <div className="grid gridItem border-yellow-300 border-3 rounded-lg p-24 p-4">
+              <div className="space-y-2">
+                <label className="font-medium">LinkedIn:</label>
+                <div>
+                  <a href="https://www.linkedin.com/in/kev613/" target="_blank" rel="noopener     noreferrer" className="text-blue-400 hover:underline" style={{
+                    fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                  }}>
+                    linkedin.com/in/kev613
+                  </a>
+                </div>
+                <label className="font-medium">GitHub:</label>
+                <div>
+                  <a href="https://github.com/kjwagner613" target="_blank" rel="noopener  noreferrer" className="text-blue-400 hover:underline" style={{
+                    fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                  }}>
+                    github.com/kjwagner613
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Contact Info Column 3 */}
+            <div className="grid grid-item">
+              <div className="space-y-2">
+                <label className="font-medium">Cover Letter:</label>
+                <div>
+                  <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                    Download PDF
+                  </a>
+                </div>
+                <label className="font-medium">Full Resume:</label>
+                <div>
+                  <a href="/assets/Kevin Wagner Resume 2025.pdf" target="_blank" rel="noopener      noreferrer" className="text-blue-400 hover:underline">
+                    Download PDF
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-
-          {/* Contact Info Column 2 */}
-          <div className="space-y-2">
-            <label className="font-medium">LinkedIn:</label>
-            <div>
-              <a href="https://www.linkedin.com/in/kev613/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline" style={{
-                fontSize: "1.2rem", fontFamily: "var(--font-main)"
-              }}>
-                linkedin.com/in/kev613
-              </a>
-            </div>
-            <label className="font-medium">GitHub:</label>
-            <div>
-              <a href="https://github.com/kjwagner613" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline" style={{
-                fontSize: "1.2rem", fontFamily: "var(--font-main)"
-              }}>
-                github.com/kjwagner613
-              </a>
-            </div>
-          </div>
-
-          {/* Contact Info Column 3 */}
-          <div className="space-y-2">
-            <label className="font-medium">Cover Letter:</label>
-            <div>
-              <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                Download PDF
-              </a>
-            </div>
-            <label className="font-medium">Full Resume:</label>
-            <div>
-              <a href="/assets/Kevin Wagner Resume 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                Download PDF
-              </a>
-            </div>
-          </div>
-
           {/* Spacer row break */}
           <div className="md:col-span-3 space-y-4 mt-8">
             <h3 className="text-xl font-semibold">Send me a message...</h3>
@@ -125,12 +129,6 @@ const Contact = ({ selected }) => {
           </div>
         </form>
 
-        <button
-          onClick={scrollToTop}
-          className="button mt-10"
-        >
-          Back to Top
-        </button>
       </div>
     </div>
   );

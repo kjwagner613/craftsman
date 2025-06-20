@@ -35,7 +35,7 @@ const Foundation = ({ selected }) => {
         <h4>Bringing It All Together</h4>
 
         <p>Each discipline strengthens the others:</p>
-        <ul>
+        <ul style={{ marginBottom: "5vh", lineHeight: 2, textAlign: "justify", fontFamily: "var(--font-main)", fontSize: "var(--font-size-small)" }}>
           <li>Software development creates and refines solutions.</li>
           <li>Project management ensures direction and efficiency.</li>
           <li>Process Automation drives optimization and prepares for future initiatives.</li>

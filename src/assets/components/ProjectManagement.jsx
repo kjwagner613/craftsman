@@ -24,7 +24,7 @@ const ProjectManagement = ({ selected }) => {
         <h1>Project Management</h1>
         <div className="mt-5 mb-[5vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
           <h2>Project Management & Software Development</h2>
-          <p>Project management is the bridge between vision and execution, integrating people, processes, and technology to achieve a shared objective. Having worked alongside top industry professionals, I’ve learned that no two projects are alike—each requires agility, strategic planning, and proactive risk mitigation to ensure successful outcomes.</p>
+          <p>Project management is the bridge between vision and execution—aligning people, processes, and technology to achieve a common goal. While the core approach to managing projects may follow a consistent framework, every project develops its own personality, often shaped by the collective energy and dynamics of the team. Success doesn’t come from rigidly enforcing a methodology, but from adaptability: planning with foresight, recognizing gaps, and bridging the space between team behavior and project control.</p>
 
           <h2>Software Development & Project Management Alignment</h2>
           <p>While some view planning in Software development as a formality, I see the Software Development Life Cycle (SDLC) as an iterative, milestone-driven process, closely aligned with project management.</p>
@@ -68,12 +68,11 @@ const ProjectManagement = ({ selected }) => {
           </ul>
           <p>Additionally, I pursued PMI training & certification (PMBOK v5, 2015-2016) to further refine my project management expertise.</p>
           <p>At Freudenberg Medical, I expanded my project management scope:</p>
-          <ul style={{ lineHeight: 2, textAlign: "justify", fontFamily: "var(--font-main)", fontSize: "var(--font-size-small)" }}>
+          <ul style={{ marginBottom: "5vh", lineHeight: 2, textAlign: "justify", fontFamily: "var(--font-main)", fontSize: "var(--font-size-small)" }}>
             <li>Created PMO for the newly projectized CPIM department.</li>
-            <li>Developed custom SharePoint PM tools & trained new PMs using Microsoft Power Platform.</li>
-            <li>Managed up to 7 concurrent medium to large IT projects at a time.</li>
-            <li>Led the cloud migration across 6 global sites.</li>
-            <li>Oversaw Microsoft Copilot rollout, ensuring smooth adoption across the organization.</li>
+            <li>Designed and implemented custom tools using SharePoint and Microsoft Power Platform that were aligned with the PMI methodology.</li>
+            <li>Authored the official procedures, work instructions, and process maps that were integrated into the organization's SOPs, formalizing their project management standards across the organization.</li>
+            <li>Trained the team not just on how to use the tools, but why the methodology mattered—how it would not only support the realization of business objectives but also their success in that department.</li>
           </ul>
         </div>
         <button

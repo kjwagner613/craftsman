@@ -27,7 +27,7 @@ const Contact = ({ selected }) => {
   return (
     <div className="w-full text-center" style={{ maxWidth: "var(--max-width)" }}>
       <div className="flex flex-col items-center mb-8">
-        <h1 className="text-3xl font-semibold mb-6">Contact Me</h1>
+        <h1 className="text-3xl font-semibold mt-[10vh] mb-6">Contact Me</h1>
 
         {/* 👇 Contact Form Grid */}
         <form

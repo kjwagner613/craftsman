@@ -117,7 +117,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <div className="" style={{ fontFamily: "var(--font-secondary)", fontSize: "2.5rem" }}>
             <br /> Craftsmanship.
           </div>
-          <div className="text-left " style={{ fontFamily: "var(--font-main)", fontSize: "1.5rem" }}><br />After all, you can always scale back. <br /></div>
+          <div className="text-left " style={{ fontFamily: "var(--font-main)", fontSize: "1.5rem" }}><br />After all, you can always roll it back. <br /></div>
 
 
 

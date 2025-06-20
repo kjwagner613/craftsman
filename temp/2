@@ -1,0 +1,193 @@
+File: src/assets/components/Contact.jsx
+```
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import '../../index.css';
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+
+
+const Contact = ({ selected }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [showColumns, setShowColumns] = useState(false);
+  
+
+  useEffect(() => {
+    let timer;
+    if (selected) {
+      timer = setTimeout(() => setIsVisible(true), 100);
+    } else {
+      setIsVisible(false);
+    }
+    return () => clearTimeout(timer);
+  }, [selected]);
+
+  return (
+    <div className="w-full   text-center" style={{ maxWidth: "var(--max-width)" }}>
+      <div className="flex flex-col items-center mb-8">
+        <h1 className="text-3xl font-semibold mb-6">Contact Me</h1>
+
+        {/* 👇 Contact Form Grid */}
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          className="grid md:grid-cols-3 gap-6 w-full text-left"
+        >
+          {/* Netlify Hidden Fields */}
+          <input type="hidden" name="form-name" value="contact" />
+          <div className="hidden">
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </div>
+
+          <button
+            onClick={() => setShowColumns(true)}
+            className="mt-4 px-6 py-2 bg-yellow-300 text-black font-semibold rounded hover:bg-yellow-400 transition"
+          >
+            Show Contact Details
+          </button>
+
+          {/* Contact Columns */}
+          <motion.div
+            layout
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
+            className="flex flex-col space-y-6"
+          >
+            {/* Contact Info Column 1 */}
+
+            <div className="space-y-4 border-2 ">
+              <div className="flex items-center justify-left border-b-2 pb-2 h-[10vh]">
+                <label className="font-medium">Email:</label>
+
+                <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline" style={{
+                  fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                }}>
+                  kevin.wagner.2024@outlook.com
+                </a></div>
+              <div className="flex items-center justify-left border-b-2 pb-2 h-[10vh]">
+                <label className="font-medium">Phone:</label>
+
+                <a href="tel:+14582546393" className="text-blue-400 hover:underline" style={{
+                  fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                }}>
+                  (458) 254-6393
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            layout
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
+            className="flex flex-col space-y-6"
+          >
+            {/* Contact Info Column 2 */}
+            <div className="space-y-4 border-2">
+              <div className="flex items-center justify-left border-b-2 pb-2 h-[10vh]">
+                <label className="font-medium">LinkedIn -:</label>
+                <div className="space-y-4">
+                  <a href="https://www.linkedin.com/in/kev613/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline" style={{
+                    fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                  }}>
+                    linkedin.com/in/kev613
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center justify-left border-b-2 pb-2 h-[10vh]">
+                <label className="font-medium">GitHub - :</label>
+                <div className="space-y-4">
+                  <a href="https://github.com/kjwagner613" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline" style={{
+                    fontSize: "1.2rem", fontFamily: "var(--font-main)"
+                  }}>
+                    github.com/kjwagner613
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            layout
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
+            className="flex flex-col space-y-6"
+          >
+            {/* Contact Info Column 3 */}
+            <div className="space-y-4 border-2">
+              <div className="flex items-center justify-left border-b-2 pb-2 h-[10vh]">
+                <label className="font-medium">Cover Letter:</label>
+                <div className="space-y-4">
+                  <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                    Download PDF
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center justify-left border-b-2 pb-2 h-[10vh]">
+                <label className="font-medium">Full Resume:</label>
+                <div className="space-y-4">
+                  <a href="/assets/Kevin Wagner Resume 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                    Download PDF
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </motion.div>
+
+          <motion.div
+            layout
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
+            className="flex flex-col space-y-6"
+          >
+
+            {/* End of grid-cols-3 */}
+            {/* Message Form Section */}
+            <div className="flex flex-col w-1/2 ml-[50%] transform -translate-x-1/2 border-yellow-300 border-2 rounded-lg mt-8">
+              <h3 className="text-xl font-semibold">Send me a message...</h3>
+              <p>If you prefer, you can also reach out to me using the form below:</p>
+
+              {/* Contact Form */}
+              <fieldset className="space-y-4">
+                <legend className="sr-only">Contact Form</legend>
+                <div className="">
+                  <div className="grid md:grid-cols-2 gap-4 w-1/2">
+                    <div className="flex flex-col leading-[2]">
+                      <label htmlFor="name" className="mb-1">Name:</label>
+                      <input type="text" name="name" id="name" required placeholder="Your name" className="input" />
+                    </div>
+                    <div className="flex flex-col leading-[2]">
+                      <label htmlFor="email" className="mb-1">Email:</label>
+                      <input type="email" name="email" id="email" required placeholder="you@example.com" className="input" />
+                    </div>
+                  </div>
+                  <div className="flex flex-col leading-[2]">
+                    <label htmlFor="message" className="mb-1">Message:</label>
+                    <textarea name="message" id="message" required placeholder="Your message..." className="input" rows="5" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <button type="submit" className="button mt-4">Send</button>
+            </div>
+          </motion.div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
+```

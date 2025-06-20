@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { motion } from 'framer-motion';
 import '../../index.css';
 
 const scrollToTop = () => {
@@ -8,19 +8,24 @@ const scrollToTop = () => {
 
 const Contact = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showColumns, setShowColumns] = useState(false); // Can still use manually, or scroll trigger later
 
   useEffect(() => {
     let timer;
     if (selected) {
-      timer = setTimeout(() => setIsVisible(true), 100);
+      timer = setTimeout(() => {
+        setIsVisible(true);
+        setShowColumns(true); // 🔁 automatic trigger
+      }, 100);
     } else {
       setIsVisible(false);
+      setShowColumns(false);
     }
     return () => clearTimeout(timer);
   }, [selected]);
 
   return (
-    <div className="w-full   text-center" style={{ maxWidth: "var(--max-width)" }}>
+    <div className="w-full text-center" style={{ maxWidth: "var(--max-width)" }}>
       <div className="flex flex-col items-center mb-8">
         <h1 className="text-3xl font-semibold mb-6">Contact Me</h1>
 
@@ -30,7 +35,7 @@ const Contact = ({ selected }) => {
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          className="grid md:grid-cols-3 gap-6 w-full text-left"
+          className="w-full text-left gap-[10px]"
         >
           {/* Netlify Hidden Fields */}
           <input type="hidden" name="form-name" value="contact" />
@@ -40,76 +45,103 @@ const Contact = ({ selected }) => {
             </label>
           </div>
 
-          {/* Contact Info Column 1 */}
-          <div className="grid grid-cols-3">
-            <div className="flex flex-col space-y-2">
-              <label className="font-medium">Email:</label>
-              <div>
-                <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline" style={{
-                  fontSize: "1.2rem", fontFamily: "var(--font-main)"
-                }}>
-                  kevin.wagner.2024@outlook.com
-                </a>
-              </div>
-              <label className="font-medium">Phone:</label>
-              <div>
-                <a href="tel:+14582546393" className="text-blue-400 hover:underline" style={{
-                  fontSize: "1.2rem", fontFamily: "var(--font-main)"
-                }}>
-                  (458) 254-6393
-                </a>
-              </div>
-            </div>
+          {/* Contact Info Grid */}
+          <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] mb-[20px] w-full">
+            {/* Email */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={showColumns ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              className="border-2 p-4 rounded"
+            >
+              <label className="font-medium block mb-2 gap-[10px]">Email:</label>
+              <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline">
+                kevin.wagner.2024@outlook.com
+              </a>
+            </motion.div>
 
+            {/* LinkedIn */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={showColumns ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="border-2 p-4 rounded"
+            >
+              <label className="font-medium block mb-2 gap-[10px]">LinkedIn:</label>
+              <a href="https://www.linkedin.com/in/kev613/" className="gap-[10px] text-blue-400 hover:underline" target="_blank">
+                linkedin.com/in/kev613
+              </a>
+            </motion.div>
 
-            <div className="grid gridItem border-yellow-300 border-3 rounded-lg p-24 p-4">
-              <div className="space-y-2">
-                <label className="font-medium">LinkedIn:</label>
-                <div>
-                  <a href="https://www.linkedin.com/in/kev613/" target="_blank" rel="noopener     noreferrer" className="text-blue-400 hover:underline" style={{
-                    fontSize: "1.2rem", fontFamily: "var(--font-main)"
-                  }}>
-                    linkedin.com/in/kev613
-                  </a>
-                </div>
-                <label className="font-medium">GitHub:</label>
-                <div>
-                  <a href="https://github.com/kjwagner613" target="_blank" rel="noopener  noreferrer" className="text-blue-400 hover:underline" style={{
-                    fontSize: "1.2rem", fontFamily: "var(--font-main)"
-                  }}>
-                    github.com/kjwagner613
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Contact Info Column 3 */}
-            <div className="grid grid-item">
-              <div className="space-y-2">
-                <label className="font-medium">Cover Letter:</label>
-                <div>
-                  <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                    Download PDF
-                  </a>
-                </div>
-                <label className="font-medium">Full Resume:</label>
-                <div>
-                  <a href="/assets/Kevin Wagner Resume 2025.pdf" target="_blank" rel="noopener      noreferrer" className="text-blue-400 hover:underline">
-                    Download PDF
-                  </a>
-                </div>
-              </div>
-            </div>
+            {/* Cover Letter */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={showColumns ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="border-2 p-4 rounded gap-[10px]"
+            >
+              <label className="gap-[10px] font-medium block mb-2">Cover Letter:</label>
+              <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank">
+                Download PDF
+              </a>
+            </motion.div>
+
+            {/* Phone */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={showColumns ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="border-2 p-4 rounded"
+            >
+              <label className="gap-[10px] font-medium block mb-2">Phone:</label>
+              <a href="tel:+14582546393" className="gap-[10px] text-blue-400 hover:underline">
+                (458) 254-6393
+              </a>
+            </motion.div>
+
+            {/* GitHub */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={showColumns ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="border-2 p-4 rounded"
+            >
+              <label className="gap-[10px] font-medium block mb-2">GitHub:</label>
+              <a href="https://github.com/kjwagner613" className="gap-[10px] text-blue-400 hover:underline" target="_blank">
+                github.com/kjwagner613
+              </a>
+            </motion.div>
+
+            {/* Resume */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={showColumns ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="gap-[10px] border-2 p-4 rounded"
+            >
+              <label className="gap-[10px] font-medium block mb-2">Resume:</label>
+              <a href="/assets/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank">
+                Download PDF
+              </a>
+            </motion.div>
           </div>
-          {/* Spacer row break */}
-          <div className="mflex flex-col w-1/2 ml-[50%] transform -translate-x-1/2 border-yellow-300 border-3 rounded-3g">
-            <h3 className="text-xl font-semibold">Send me a message...</h3>
-            <p>If you prefer, you can also reach out to me using the form below:</p>
 
-            {/* Contact Form */}
-            <fieldset className="space-y-4">
-              <legend className="sr-only">Contact Form</legend>
-              <div className="">
-                <div className="grid md:grid-cols-2 gap-4 w-1/2">
+          {/* Message Form Section */}
+          <motion.div
+            layout
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
+            className="flex flex-col items-center ml-[25%] w-[50%]"
+          >
+            <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6">
+              <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
+              <p className="mb-4">If you prefer, you can also reach out to me using the form below:</p>
+
+              {/* Contact Form */}
+              <fieldset className="space-y-4 ">
+                <legend className="sr-only">Contact Form</legend>
+                <div className="grid grid-cols-2 gap-[50px]">
                   <div className="flex flex-col leading-[2]">
                     <label htmlFor="name" className="mb-1">Name:</label>
                     <input type="text" name="name" id="name" required placeholder="Your name" className="input" />
@@ -123,13 +155,18 @@ const Contact = ({ selected }) => {
                   <label htmlFor="message" className="mb-1">Message:</label>
                   <textarea name="message" id="message" required placeholder="Your message..." className="input" rows="5" />
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
-            <button type="submit" className="button mt-4">Send</button>
-          </div>
+              <button
+                type="submit"
+                className="w-[25%] item-center button mt-4 mx-auto"
+                style={{ margin: "0 auto" }}
+              >
+                Send
+              </button>
+            </div>
+          </motion.div>
         </form>
-
       </div>
     </div>
   );

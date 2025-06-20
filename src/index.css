@@ -31,7 +31,6 @@ html, body {
 }
 
 
-
 @font-face {
   font-family: 'Playball';
   font-style: normal;
@@ -279,3 +278,43 @@ a {
 }
 
 
+
+/* top-center-contact */
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(2) > div:nth-child(1) > label {
+  margin-left: 2rem; 
+    margin-right: 1rem;
+
+}
+
+/* top-left-contact  */
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(1) > div:nth-child(1) > label {
+  margin-left: 2rem; 
+  margin-right: 1rem;
+
+}
+
+/* bottom-left-contact  */
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(1) > div:nth-child(2) > label  {
+  margin-left: 2rem;
+  margin-right: 1rem;
+
+ }
+
+/* bottom-center-contact  */
+ #root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(2) > div:nth-child(2) > label  {
+  margin-left: 2rem;
+  margin-right: 1rem;
+ }
+
+/* top-right-contact  */
+ #root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(3) > div:nth-child(1) > label  {
+  margin-left: 2rem;
+  margin-right: 1rem;
+ }
+
+ /* bottom-right-contact  */
+ #root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(3) > div:nth-child(2) > label  {
+  margin-left: 2rem;
+  margin-right: 1rem;
+
+ }

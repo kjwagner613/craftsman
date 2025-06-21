@@ -24,37 +24,34 @@ function App() {
   // Example: (add any logic here)
 
   return (
-    <> 
-     <Navbar setSelectedSection={setSelectedSection} />
-     <div
-          className="cloud"
-          style={{
-            position: "absolute",
-            top: "-10.8vh",
-            left: "0",
-            width: "700px",
-            height: "500px",
-            backgroundImage: "url('/Cumulus_cloud.png')",
-            backgroundSize: "cover",
-            zIndex: 100,
-            animation: "moveCloud 50s linear infinite"
-          }}
-          onClick={() => setSelectedSection(selectedSection === "AboutMe" ? "Header" : "AboutMe")}
-          role="button"
-          tabIndex={0}
-          aria-label="Switch section"
-          onKeyPress={e => {
-            if (e.key === "Enter" || e.key === " ") {
-              setSelectedSection(selectedSection === "AboutMe" ? "Header" : "AboutMe");
-            }
-          }}
-        ></div>
+    <>
+      <Navbar setSelectedSection={setSelectedSection} selectedSection={selectedSection} />
+      {/* Cloud image (fully visible, not clipped) */}
+      <div
+        style={{
+          position: "absolute",
+          top: "-1vh",
+          left: "0",
+          width: "700px",
+          height: "500px",
+          backgroundImage: "url('/Cumulus_cloud.png')",
+          backgroundSize: "cover",
+          zIndex: 20,
+          animation: "moveCloud 50s linear infinite",
+          pointerEvents: "none", // don't block anything
+        }}
+
+      />
+
+      {/* Overlay for click detection (clipped shape, interactive) */}
+      
+
       {createPortal((<>
-       
+
       </>), document.body)}
       <div className="pt-20 flex flex-col w-full min-h-screen">
         <></>
-       
+
 
         {/* Initial sections */}
         <div className="w-full flex flex-col items-center">

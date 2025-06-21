@@ -11,7 +11,7 @@ const AboutMe = ({ setSelectedSection }) => {
       transition={{ duration: 0.7, ease: 'easeInOut' }}
       className="flex items-center justify-center"
     >
-      <div className="w-3/4 text-center">
+      <div className="w-[90vw] max-w-[1000px] text-center">
         <div className="flex flex-col items-center mb-8">
           <div className="picblock flex column items-center justify-center">
             <picture>
@@ -76,7 +76,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <br /><br />
 
           <div
-            className="text-justify w-4/5"
+            className="text-justify w-[90vw] max-w-[1000px] "
             style={{
               fontSize: "1.2rem",
               fontFamily: "var(--font-main)",
@@ -87,7 +87,7 @@ const AboutMe = ({ setSelectedSection }) => {
           </div>
           <h1 className="">Hello, I'm Kevin Wagner</h1>
           <div
-            className="text-justify w-4/5"
+            className="text-justify w-[90vw] max-w-[1000px] "
             style={{
               fontSize: "1.2rem",
               fontFamily: "var(--font-main)",
@@ -127,7 +127,7 @@ const AboutMe = ({ setSelectedSection }) => {
           >
             Click here for my portfolio
           </button>
-          <p className="w-4/5">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
+          <p className="w-[90vw] max-w-[1000px] ">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
         </div>
       </div>
     </motion.div>

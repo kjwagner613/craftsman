@@ -21,14 +21,14 @@ const Software = ({ selected }) => {
     <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out 
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1>Software Development</h1>
-      <p className="mt-5 text-justify w-4/5">
+      <p className="mt-5 text-justify w-[90vw] max-w-[1000px] ">
         Software development is a natural evolution of my career—a way to solve problems, refine systems, and empower people through technology. Years spent supporting businesses, managing projects, and automating workflows have reinforced one truth: code is more than syntax—it’s the bridge between vision and execution. Regardless of the platform or industry, Software drives transformation, scales solutions, and turns ideas into reality.</p>
-      <p className="mt-5 text-justify w-4/5">My experience has honed the ability to balance precision with adaptability, ensuring projects meet deadlines, deliver value, and optimize performance. But beyond efficiency, I believe in craftsmanship—writing code with clarity, consideration, and patience, always keeping the end goal in mind.</p>
-      <p className="mt-5 mb-[5vh] text-justify w-4/5">Technology should serve people, not complicate their work. My approach prioritizes function, elegance, and purpose—building systems that don’t just work, but work well, which was evidenced  most recently during the SAP implementation at multiple sites. I had developed interim solutions to bridge gaps between the customized SAP template and day-to-day operational needs. These "temporary tools" were designed to be phased out once SAP delivered equivalent functionality. However, even years after these enhancements were rolled-out, many of these temporary solutions remained in active use—endorsed by users for their simplicity and alignment with real-world workflows.
+      <p className="mt-5 text-justify w-[90vw] max-w-[1000px] ">My experience has honed the ability to balance precision with adaptability, ensuring projects meet deadlines, deliver value, and optimize performance. But beyond efficiency, I believe in craftsmanship—writing code with clarity, consideration, and patience, always keeping the end goal in mind.</p>
+      <p className="mt-5 mb-[5vh] text-justify w-[90vw] max-w-[1000px] ">Technology should serve people, not complicate their work. My approach prioritizes function, elegance, and purpose—building systems that don’t just work, but work well, which was evidenced  most recently during the SAP implementation at multiple sites. I had developed interim solutions to bridge gaps between the customized SAP template and day-to-day operational needs. These "temporary tools" were designed to be phased out once SAP delivered equivalent functionality. However, even years after these enhancements were rolled-out, many of these temporary solutions remained in active use—endorsed by users for their simplicity and alignment with real-world workflows.
       </p>
 
       <h2 className="underline"> Applications in Development</h2>
-      <section className="text-justify w-4/5">
+      <section className="text-justify w-[90vw] max-w-[1000px] ">
         <ol>
           <li>
             <div className="body-container">
@@ -45,7 +45,7 @@ const Software = ({ selected }) => {
         </ol>
       </section>
       <h2 className="underline">Developed Applications</h2>
-      <section className="text-justify w-4/5">
+      <section className="text-justify w-[90vw] max-w-[1000px] ">
         <p>You may create your own credentials for any of the below, or you may use "test" for login and
           password to tour them. Except the first two, please use "test@test.com" for username and "test" for password for the Nursery Demo app and
           for the "Champion - My Life Wellness app use "tour" for the user name and "Passw0rd!" </p>
@@ -53,7 +53,7 @@ const Software = ({ selected }) => {
 
         <ol>
           <li>
-            <div className="body-container w-4/5">
+            <div className="body-container w-[90vw] max-w-[1000px] ">
               <p className="proj-titles"><strong>Nursery Resource Demo</strong></p>
               <p className="project-brief">Developed for a local commercial nursery on speculation. Intended to be the 1st phase with product inventory, business information and client registry with a 2nd phase including a social networking enhancement allowing their clients to collaborate on care, horticulture, projects, issues, and linking in experts as clients require.</p>
               <p className="built-with">Built with the following:</p>
@@ -65,7 +65,7 @@ const Software = ({ selected }) => {
             </div>
           </li>
           <li>
-            <div className="body-container w-4/5">
+            <div className="body-container w-[90vw] max-w-[1000px] ">
               <p className="proj-titles"><strong>Champion - MyLife Wellness Organizer</strong></p>
               <p className="project-brief">Share the burden of designing and maintaining a healthy plan with your loved
                 ones.</p>
@@ -80,7 +80,7 @@ const Software = ({ selected }) => {
             </div>
           </li>
           <li>
-            <div className="body-container w-4/5" style={{ maxWidth: "var(--max-width)" }}>
+            <div className="body-container w-[90vw] max-w-[1000px] " style={{ maxWidth: "var(--max-width)" }}>
               <p className="proj-titles"><strong>ToDo - A Task List</strong></p>
               <p className="project-brief">Just an easy-to-use task list where you can create tasks quickly, then come
                 back to them at a more convenient time to add additional information. It is a front-end REACT

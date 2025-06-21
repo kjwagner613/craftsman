@@ -76,22 +76,29 @@ html, body {
   /* font-size: var(--font-size-body); */
  */
 
-
-.cloud {
-  width:355px;
+/* cloud styled inline on app.jsx */
+/* .cloud {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  width: 355px;
   height: 200px;
-  background-image: url('/cloud-1.png');
-  position: absolute;
-  top: -15%;
-  left: -500px; /* Start off-screen */
-  animation: moveCloud 50s cubic-bezier(.15,.53,.32,.71) infinite;
+  background-image: url('/Cumulus_cloud.png');
+  background-size: cover;
+  z-index: 9999;
+  animation: moveCloud 50s linear infinite;
 
-  @media (max-width: 800px) {
+} */
+
+
+@media (max-width: 800px) {
+  .cloud {
     transform: scale(0.5);
     left: 50%;
     transform: translateX(-50%) scale(0.5);
   }
 }
+
 
 @keyframes moveCloud {
   from {
@@ -267,28 +274,129 @@ a {
 
  }
 
- #root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > label {
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > label {
  
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--text-color-light);
-  
- }
+  color: black;
+  font-family: var(--font-secondary);
+  margin-left: 0.5rem;
+}
 
- #root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > a {
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(2) > label {
+ 
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  font-family: var(--font-secondary);
+  margin-left: 0.5rem;
+}
+
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(3) > label {
+ 
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  font-family: var(--font-secondary);
+  margin-left: 0.5rem;
+}
+
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(4) > label {
+ 
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  font-family: var(--font-secondary);
+  margin-left: 0.5rem;
+}
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(5) > label {
+ 
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  font-family: var(--font-secondary);
+  margin-left: 0.5rem;
+}
+
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(6) > label {
+ 
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  font-family: var(--font-secondary);
+  margin-left: 0.5rem;
+}
+
+
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > a {
   
   font-size: 1.1rem;
   font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
   
- }
+}
 
- #root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) {
-  background-color: var(--highlight-color-1);
-  padding: 0.5rem;
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(2) > a {
   
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  
+}
 
- }
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(3) > a {
+  
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  
+}
 
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(4) > a {
+  
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  
+}
+
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(5) > a {
+  
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  
+}
+
+#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(6) > a {
+  
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
  body > nav > nav > ul > li:nth-child(4) > button {
   color: var(--text-color-light);
   font-weight: bold;
@@ -351,9 +459,9 @@ body > nav > nav > ul > li:nth-child(1) > button {
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- }
+ } */
 
- body > nav > nav > ul > li:nth-child(6) > button {
+ /* body > nav > nav > ul > li:nth-child(6) > button {
   color: var(--text-color-light);
   font-weight: bold;
   background-color: rgba(28, 27, 27, 0.5);
@@ -364,4 +472,4 @@ body > nav > nav > ul > li:nth-child(1) > button {
   border-radius: var(--border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
- }
+ } */

@@ -25,7 +25,7 @@ const Contact = ({ selected }) => {
   }, [selected]);
 
   return (
-    <div className="w-full text-center" style={{ maxWidth: "var(--max-width)" }}>
+    <div className="w-full text-center" >
       <div className="flex flex-col items-center mb-8">
         <h1 className="text-3xl font-semibold mt-[10vh] mb-6">Contact Me</h1>
 
@@ -132,18 +132,18 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
-            className="flex flex-col items-center ml-[25%] w-[50%]"
+            className="flex flex-col  w-[70%]"
           >
-            <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6">
+            <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6" style={{ marginLeft: "50%", transform: "translateX(-25%)" }}>
               <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
               <div className="flex flex-col items-center mb-4">
                 <p className="text-gray-600" style={{ color: "red", animation: "blink" }}>Not yet please, still wiring this into netlify. appreciate your patience.</p>
               </div>
               <p className="mb-4">If you prefer, you can also reach out to me using the form below:</p>
-              
+
 
               {/* Contact Form */}
-              <fieldset className="space-y-4 ">
+              <fieldset className="space-y-4 " >
                 <legend className="sr-only">Contact Form</legend>
                 <div className="grid grid-cols-2 gap-[50px]">
                   <div className="flex flex-col leading-[2]">

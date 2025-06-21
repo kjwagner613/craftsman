@@ -19,7 +19,7 @@ const ProjectManagement = ({ selected }) => {
 
   return (
     <>
-      <div className={`flex flex-col items-center w-4/5 transition-opacity transition-transform duration-700 ease-in-out
+      <div className={`flex flex-col items-center w-[90vw] max-w-[1000px]  transition-opacity transition-transform duration-700 ease-in-out
         ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
         <h1>Project Management</h1>
         <div className="mt-5 mb-[5vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>

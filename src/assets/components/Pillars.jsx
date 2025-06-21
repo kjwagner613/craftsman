@@ -7,7 +7,7 @@ const Pillars = ({ setSelectedSection }) => (
       className="cloud z-10 cursor-pointer"
       onClick={() => setSelectedSection("AboutMe")}
     />
-    
+
 
 
     <picture>
@@ -19,7 +19,7 @@ const Pillars = ({ setSelectedSection }) => (
       <img
         src="/pillars3.png"
         alt="Business Pillars"
-        className="mb-8 transform scale-100 sm:scale-75 md:scale-50"
+        className="mb-8 transform scale-100 sm:scale-75 md:scale-50 z-500"
       />
     </picture>
     {/* Invisible click targets */}

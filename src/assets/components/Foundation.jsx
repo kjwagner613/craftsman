@@ -18,10 +18,10 @@ const Foundation = ({ selected }) => {
   }, [selected]);
 
   return (
-    <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out
+    <div className={`flex flex-col w-[90vw] max-w-[1000px] items-center w-full transition-opacity transition-transform duration-700 ease-in-out
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1>Foundation</h1>
-      <div className="mt-2 mb-[15vh] text-justify" style={{ maxWidth: "var(--max-width)" }}>
+      <div className="mt-2 mb-[15vh] text-justify " >
         <h4>The Core of My Work</h4>
         <p>Throughout my career, my focus has been aligning technology with evolving business needs—building systems that enhance efficiency, reliability, and adaptability through LEAN principles, integration, and iterative refinement.</p>
         <p>For nearly a decade, I delivered global solutions by supporting tools I didn’t always use firsthand, yet deeply understood. Whether reconfiguring routers, designing converters, or engineering facility infrastructure, I found that the true leverage of technology lay not just in its deployment, but in its ability to be reshaped as a solution.</p>

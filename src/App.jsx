@@ -24,12 +24,37 @@ function App() {
   // Example: (add any logic here)
 
   return (
-    <>
-      {createPortal(
-        <Navbar setSelectedSection={setSelectedSection} />,
-        document.body
-      )}
+    <> 
+     <Navbar setSelectedSection={setSelectedSection} />
+     <div
+          className="cloud"
+          style={{
+            position: "absolute",
+            top: "-10.8vh",
+            left: "0",
+            width: "700px",
+            height: "500px",
+            backgroundImage: "url('/Cumulus_cloud.png')",
+            backgroundSize: "cover",
+            zIndex: 100,
+            animation: "moveCloud 50s linear infinite"
+          }}
+          onClick={() => setSelectedSection(selectedSection === "AboutMe" ? "Header" : "AboutMe")}
+          role="button"
+          tabIndex={0}
+          aria-label="Switch section"
+          onKeyPress={e => {
+            if (e.key === "Enter" || e.key === " ") {
+              setSelectedSection(selectedSection === "AboutMe" ? "Header" : "AboutMe");
+            }
+          }}
+        ></div>
+      {createPortal((<>
+       
+      </>), document.body)}
       <div className="pt-20 flex flex-col w-full min-h-screen">
+        <></>
+       
 
         {/* Initial sections */}
         <div className="w-full flex flex-col items-center">
@@ -42,6 +67,7 @@ function App() {
         </div>
 
         {/* Pillars and sub-sections */}
+
         {selectedSection !== "AboutMe" && selectedSection !== "Contact" && (
           <AnimatePresence mode="wait">
             <motion.div

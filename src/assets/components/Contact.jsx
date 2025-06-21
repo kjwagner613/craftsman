@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import ContactForm from './contactForm'
+
 import '../../index.css';
 
 const scrollToTop = () => {
@@ -29,148 +31,122 @@ const Contact = ({ selected }) => {
       <div className="flex flex-col items-center mb-8">
         <h1 className="text-3xl font-semibold mt-[10vh] mb-6">Contact Me</h1>
 
-        {/* 👇 Contact Form Grid */}
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          className="w-full text-left gap-[10px]"
-        >
-          {/* Netlify Hidden Fields */}
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="hidden">
-            <label>
-              Don’t fill this out: <input name="bot-field" />
-            </label>
-          </div>
 
-          {/* Contact Info Grid */}
-          <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] mb-[20px] w-full">
-            {/* Email */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={showColumns ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1, duration: 0.5 }}
-              className="border-2 p-4 rounded"
-            >
-              <label className="font-medium block mb-2 gap-[10px]">Email:</label>
-              <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline">
-                kevin.wagner.2024@outlook.com
-              </a>
-            </motion.div>
+        {/* Netlify Hidden Fields */}
 
-            {/* LinkedIn */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={showColumns ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="border-2 p-4 rounded"
-            >
-              <label className="font-medium block mb-2 gap-[10px]">LinkedIn:</label>
-              <a href="https://www.linkedin.com/in/kev613/" className="gap-[10px] text-blue-400 hover:underline" target="_blank">
-                linkedin.com/in/kev613
-              </a>
-            </motion.div>
 
-            {/* Cover Letter */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={showColumns ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="border-2 p-4 rounded gap-[10px]"
-            >
-              <label className="gap-[10px] font-medium block mb-2">Cover Letter:</label>
-              <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank">
-                Download PDF
-              </a>
-            </motion.div>
-
-            {/* Phone */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={showColumns ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="border-2 p-4 rounded"
-            >
-              <label className="gap-[10px] font-medium block mb-2">Phone:</label>
-              <a href="tel:+14582546393" className="gap-[10px] text-blue-400 hover:underline">
-                (458) 254-6393
-              </a>
-            </motion.div>
-
-            {/* GitHub */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={showColumns ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className="border-2 p-4 rounded"
-            >
-              <label className="gap-[10px] font-medium block mb-2">GitHub:</label>
-              <a href="https://github.com/kjwagner613" className="gap-[10px] text-blue-400 hover:underline" target="_blank">
-                github.com/kjwagner613
-              </a>
-            </motion.div>
-
-            {/* Resume */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={showColumns ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.6, duration: 0.5 }}
-              className="gap-[10px] border-2 p-4 rounded"
-            >
-              <label className="gap-[10px] font-medium block mb-2">Resume:</label>
-              <a href="/assets/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank">
-                Download PDF
-              </a>
-            </motion.div>
-          </div>
-
-          {/* Message Form Section */}
+        {/* Contact Info Grid */}
+        <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] mb-[20px] w-full">
+          {/* Email */}
           <motion.div
-            layout
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
-            className="flex flex-col  w-[70%]"
+            transition={{ delay: 0.1, duration: 0.5 }}
+            className="border-2 p-4 rounded"
           >
-            <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6" style={{ marginLeft: "50%", transform: "translateX(-25%)" }}>
-              <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
-              <div className="flex flex-col items-center mb-4">
-                <p className="text-gray-600" style={{ color: "red", animation: "blink" }}>Not yet please, still wiring this into netlify. appreciate your patience.</p>
-              </div>
-              <p className="mb-4">If you prefer, you can also reach out to me using the form below:</p>
-
-
-              {/* Contact Form */}
-              <fieldset className="space-y-4 " >
-                <legend className="sr-only">Contact Form</legend>
-                <div className="grid grid-cols-2 gap-[50px]">
-                  <div className="flex flex-col leading-[2]">
-                    <label htmlFor="name" className="mb-1">Name:</label>
-                    <input type="text" name="name" id="name" required placeholder="Your name" className="input" />
-                  </div>
-                  <div className="flex flex-col leading-[2]">
-                    <label htmlFor="email" className="mb-1">Email:</label>
-                    <input type="email" name="email" id="email" required placeholder="you@example.com" className="input" />
-                  </div>
-                </div>
-                <div className="flex flex-col leading-[2]">
-                  <label htmlFor="message" className="mb-1">Message:</label>
-                  <textarea name="message" id="message" required placeholder="Your message..." className="input" rows="5" />
-                </div>
-              </fieldset>
-
-              <button
-                type="submit"
-                className="w-[25%] item-center button mt-4 mx-auto"
-                style={{ margin: "0 auto" }}
-              >
-                Send
-              </button>
-            </div>
+            <label className="font-medium block mb-2 gap-[10px]">Email:</label>
+            <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline">
+              kevin.wagner.2024@outlook.com
+            </a>
           </motion.div>
-        </form>
+
+          {/* LinkedIn */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="border-2 p-4 rounded"
+          >
+            <label className="font-medium block mb-2 gap-[10px]">LinkedIn:</label>
+            <a href="https://www.linkedin.com/in/kev613/" className="gap-[10px] text-blue-400 hover:underline" target="_blank">
+              linkedin.com/in/kev613
+            </a>
+          </motion.div>
+
+          {/* Cover Letter */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="border-2 p-4 rounded gap-[10px]"
+          >
+            <label className="gap-[10px] font-medium block mb-2">Cover Letter:</label>
+            <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank">
+              Download PDF
+            </a>
+          </motion.div>
+
+          {/* Phone */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="border-2 p-4 rounded"
+          >
+            <label className="gap-[10px] font-medium block mb-2">Phone:</label>
+            <a href="tel:+14582546393" className="gap-[10px] text-blue-400 hover:underline">
+              (458) 254-6393
+            </a>
+          </motion.div>
+
+          {/* GitHub */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="border-2 p-4 rounded"
+          >
+            <label className="gap-[10px] font-medium block mb-2">GitHub:</label>
+            <a href="https://github.com/kjwagner613" className="gap-[10px] text-blue-400 hover:underline" target="_blank">
+              github.com/kjwagner613
+            </a>
+          </motion.div>
+
+          {/* Resume */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={showColumns ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            className="gap-[10px] border-2 p-4 rounded"
+          >
+            <label className="gap-[10px] font-medium block mb-2">Resume:</label>
+            <a href="/assets/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank">
+              Download PDF
+            </a>
+          </motion.div>
+        </div>
+
+        {/* Message Form Section */}
+        <motion.div
+          layout
+          initial={{ opacity: 0, y: 50 }}
+          animate={showColumns ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
+          className="flex flex-col  w-[70%]"
+        >
+          <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6" style={{ marginLeft: "50%", transform: "translateX(-25%)" }}>
+            <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
+            <div className="flex flex-col items-center mb-4">
+              <p className="text-gray-600" style={{ color: "red", animation: "blink" }}>Not yet please, still wiring this into netlify. appreciate your patience.</p>
+            </div>
+            <p className="mb-4">If you prefer, you can also reach out to me using the form below:</p>
+
+
+            {/* Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+
+              <ContactForm />
+            </motion.div>
+
+
+
+          </div>
+        </motion.div>
+
       </div>
     </div>
   );

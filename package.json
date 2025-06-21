@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@netlify/emails": "^1.1.0",
+    "@sendgrid/mail": "^8.1.5",
     "framer-motion": "^12.18.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

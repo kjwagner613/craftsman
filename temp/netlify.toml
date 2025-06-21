@@ -1,0 +1,7 @@
+[[plugins]]
+package = "@netlify/plugin-emails"
+
+[dev]
+command = "npm run dev"
+targetPort = 5173
+port = 8888

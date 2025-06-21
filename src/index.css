@@ -67,7 +67,7 @@ html, body {
 }
 
 #root > div > div > div > div:nth-child(8) > strong > span:nth-child(2) > p:nth-child(1) {
-  font-size: 1.5rem !Important;
+  font-size: 1.5rem !important;
 
 }
 
@@ -195,14 +195,16 @@ button {
   background-color: var(--background-cream);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
 button:hover {
   border: 3px solid #646cff;
+  background-color: #f0eacb;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -235,45 +237,11 @@ a {
 
 
 
-/* top-center-contact */
-#root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(2) > div:nth-child(1) > label {
-  margin-left: 2rem; 
-    margin-right: 1rem;
-
+/* Use a class for contact form labels to avoid overly specific selectors */
+.contact-label {
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
-
-/* top-left-contact  */
-#root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(1) > div:nth-child(1) > label {
-  margin-left: 2rem; 
-  margin-right: 1rem;
-
-}
-
-/* bottom-left-contact  */
-#root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(1) > div:nth-child(2) > label  {
-  margin-left: 2rem;
-  margin-right: 1rem;
-
- }
-
-/* bottom-center-contact  */
- #root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(2) > div:nth-child(2) > label  {
-  margin-left: 2rem;
-  margin-right: 1rem;
- }
-
-/* top-right-contact  */
- #root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(3) > div:nth-child(1) > label  {
-  margin-left: 2rem;
-  margin-right: 1rem;
- }
-
- /* bottom-right-contact  */
- #root > div > div > div > div > form > div.grid.grid-cols-3.gap-8 > div:nth-child(3) > div:nth-child(2) > label  {
-  margin-left: 2rem;
-  margin-right: 1rem;
-
- }
 
 #root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > label {
  
@@ -380,20 +348,66 @@ a {
   font-weight: 600;
   font-family: var(--font-main);
   color: black;
-  
+ 
 }
 
+/* message me block */
+/* labels */
 
+#root > div.pt-20.flex.flex-col.w-full.min-h-screen > div > div > div > form > div.flex.flex-col.w-\[70\%\] > div > fieldset > div.grid.grid-cols-2.gap-\[50px\] > div:nth-child(1) > label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
 
+}
 
+#root > div.pt-20.flex.flex-col.w-full.min-h-screen > div > div > div > form > div.flex.flex-col.w-\[70\%\] > div > fieldset > div.grid.grid-cols-2.gap-\[50px\] > div:nth-child(2) > label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+}
 
+#root > div.pt-20.flex.flex-col.w-full.min-h-screen > div > div > div > form > div.flex.flex-col.w-\[70\%\] > div > fieldset > div.flex.flex-col.leading-\[2\] > label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+}
+ /* fields  */
 
+#name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  height: 3vh; 
 
+}
 
+#email {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  height: 3vh; /* Adjust height as needed */
+}
 
+#message {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: black;
+  height: 200px; /* Adjust height as needed */
+}
 
+/* message Me message block */
+/* #root > div.pt-20.flex.flex-col.w-full.min-h-screen > div > div > div > form > div.flex.flex-col.w-\[70\%\] > div {
+ 
+  overflow: hidden;
 
-
+} */
 
 
 

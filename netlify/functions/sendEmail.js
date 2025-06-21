@@ -23,7 +23,7 @@ exports.handler = async (event) => {
 
   const msg = {
     to: process.env.TO_EMAIL,
-    from: process.env.FROM_EMAIL,
+    from: 'coderwagner@gmail.com',
     subject: `New message from ${senderName}`,
     text: message,
     html: `<p><strong>From:</strong> ${senderName} (${email})</p><p>${message}</p>`,

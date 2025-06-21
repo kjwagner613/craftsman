@@ -1,9 +1,26 @@
 const sgMail = require('@sendgrid/mail');
 
 exports.handler = async (event) => {
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  if (!event.body) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: 'Missing request body' }),
+    };
+  }
 
-  const { name, email, message } = JSON.parse(event.body);
+  let parsed;
+  try {
+    parsed = JSON.parse(event.body);
+  } catch (err) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: 'Invalid JSON format' }),
+    };
+  }
+
+  const { name, email, message } = parsed;
+
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const msg = {
     to: process.env.TO_EMAIL,

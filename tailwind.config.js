@@ -11,6 +11,7 @@ module.exports = {
         serif: ['Playfair Display', 'serif'],
         script: ['Playball', 'cursive'],
         aoora: ['Aoora', 'sans-serif'],
+        main: ['var(--font-main)', 'sans-serif'],
       },
       transitionProperty: {
         'height': 'height', // Enables smooth height animation

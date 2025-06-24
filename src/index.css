@@ -17,7 +17,7 @@ html, body {
   --highlight-color-1: rgb(60, 78, 178);
   --border-radius: 8px;
   --font-main: "Lato", sans-serif;
-  --font-secondary: "Playball", cursive;
+  --font-secondary: "Playball", sans-serif;
   --font-marquee:  "Aoora", sans-serif;
   --font-size-titles: 2.3rem;
   --font-size-headers: 1.8rem;

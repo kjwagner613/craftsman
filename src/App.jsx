@@ -63,7 +63,7 @@ function App() {
           )}
         </div>
 
-        {/* Pillars and sub-sections */}
+        {/* Pillars and sub-sections  */}
 
         {selectedSection !== "AboutMe" && selectedSection !== "Contact" && (
           <AnimatePresence mode="wait">

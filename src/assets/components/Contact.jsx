@@ -32,7 +32,7 @@ const Contact = ({ selected }) => {
       <div className="flex flex-col items-center mb-8 w-full max-w-5xl">
         <h1 className="text-3xl font-semibold mt-[10vh] mb-6 z-50">Contact Me</h1>
 
-        {/* Netlify Hidden Fields */}
+        {/* Netlify Hidden Fields for messaging*/}
 
         {/* Contact Info Grid */}
         <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] mb-[20px] w-full">
@@ -49,7 +49,7 @@ const Contact = ({ selected }) => {
             </a>
           </motion.div>
 
-          {/* LinkedIn */}
+          {/* LinkedIn  info*/}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}

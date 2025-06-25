@@ -44,7 +44,7 @@ function App() {
       />
 
       {/* Overlay for click detection (clipped shape, interactive) */}
-      
+
 
       {createPortal((<>
 
@@ -69,7 +69,7 @@ function App() {
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedSection}
-              className="w-full flex flex-col items-center z-50 mt-[1in]"
+              className="w-full flex flex-col items-center z-45 mt-[1in]"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ y: "100vh", opacity: 0 }}

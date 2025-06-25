@@ -13,7 +13,7 @@ const Navbar = ({ setSelectedSection }) => {
 
   return (
     <nav
-      className="fixed top-[-2%] left-[-1%] w-[100vw] text-white border-indigo-700 py-6 z-40 overflow-hidden"
+      className="fixed top-[-2%] left-[-1%] w-[100vw] text-white border-indigo-700 py-6 z-70 overflow-hidden"
       style={{
         height: "15rem",
         backgroundImage: "url('/sunFade.png')",

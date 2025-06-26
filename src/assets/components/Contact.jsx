@@ -71,7 +71,7 @@ const Contact = ({ selected }) => {
             className="border-2 p-4 rounded gap-[10px] z-0"
           >
             <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Cover Letter:</label>
-            <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <a href="/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               Click to View and Download PDF
             </a>
           </motion.div>
@@ -110,7 +110,7 @@ const Contact = ({ selected }) => {
             className="gap-[10px] border-2 p-4 rounded z-0"
           >
             <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Resume:</label>
-            <a href="/assets/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }} >
+            <a href="/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }} >
               Click to View and Download PDF
             </a>
           </motion.div>

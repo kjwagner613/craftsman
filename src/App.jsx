@@ -29,7 +29,7 @@ function App() {
       {/* Cloud image (fully visible, not clipped) */}
       <div
         style={{
-          position: "absolute",
+          position: "fixed !important",
           top: "-1vh",
           left: "0",
           width: "700px",

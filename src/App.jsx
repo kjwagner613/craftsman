@@ -36,7 +36,7 @@ function App() {
           height: "500px",
           backgroundImage: "url('/Cumulus_cloud.png')",
           backgroundSize: "cover",
-          zIndex: 20,
+          zIndex: 0,
           animation: "moveCloud 50s linear infinite",
           pointerEvents: "none", // don't block anything
         }}

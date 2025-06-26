@@ -30,7 +30,7 @@ const Contact = ({ selected }) => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex flex-col items-center mb-8 w-full max-w-5xl">
-        <h1 className="text-3xl font-semibold mt-[10vh] mb-6 z-60">Contact Me</h1>
+        <h1 className="text-3xl font-semibold mt-[15vh] mb-6 z-30">Contact Me</h1>
 
         {/* Netlify Hidden Fields for messaging*/}
 
@@ -41,10 +41,11 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 60 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.5 }}
-            className="border-2 p-4 rounded z-60"
+            className="border-2 p-4 rounded z-0"
+            style={{ pointerEvents: 'auto' }}
           >
-            <label className="block mb-2 gap-[10px]" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Email:</label>
-            <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className="block mb-2 gap-[10px] z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Email:</label>
+            <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               kevin.wagner.2024@outlook.com
             </a>
           </motion.div>
@@ -54,7 +55,7 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="border-2 p-4 rounded z-60"
+            className="border-2 p-4 rounded z-0"
           >
             <label className="block mb-2 gap-[10px]" style={{ fontSize: "1.2rem", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }}>LinkedIn:</label>
             <a href="https://www.linkedin.com/in/kev613/" className="gap-[10px] text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
@@ -67,7 +68,7 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="border-2 p-4 rounded gap-[10px] z-60"
+            className="border-2 p-4 rounded gap-[10px] z-0"
           >
             <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Cover Letter:</label>
             <a href="/assets/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
@@ -80,7 +81,7 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="border-2 p-4 rounded z-60"
+            className="border-2 p-4 rounded z-0"
           >
             <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Phone:</label>
             <a href="tel:+14582546393" className="gap-[10px] text-blue-400 hover:underline" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
@@ -93,7 +94,7 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="border-2 p-4 rounded z-60"
+            className="border-2 p-4 rounded z-0"
           >
             <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >GitHub:</label>
             <a href="https://github.com/kjwagner613" className="gap-[10px] text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
@@ -106,7 +107,7 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="gap-[10px] border-2 p-4 rounded z-60"
+            className="gap-[10px] border-2 p-4 rounded z-0"
           >
             <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Resume:</label>
             <a href="/assets/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }} >
@@ -123,7 +124,7 @@ const Contact = ({ selected }) => {
           transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
           className="flex flex-col w-full items-center"
         >
-          <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-60">
+          <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-0">
             <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
             <div className="flex flex-col items-center mb-4">
               <p className="text-gray-600" style={{ color: "black", animation: "blink" }}></p>

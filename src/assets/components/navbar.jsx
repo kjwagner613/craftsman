@@ -13,21 +13,24 @@ const Navbar = ({ setSelectedSection }) => {
 
   return (
     <nav
-      className="fixed top-[-2%] left-[-1%] w-[100vw] text-white border-indigo-700 py-6 z-70 overflow-hidden"
+      className="fixed top-0 left-0 w-full text-white py-4 z-50"
       style={{
-        height: "15rem",
+        top: "0vh",
+        left: "-1vw",
+        width: "calc(100% + 2vw)", // Adjust width to cover the full viewport
+        height: "25vh",
         backgroundImage: "url('/sunFade.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <ul className="flex flex-row fixed top-[-49vh] items-center justify-center h-full px-8 pb-10 space-x-8 list-none leading-4 text-white text-lg">
+      <ul className="flex flex-row items-center justify-center space-x-4 list-none text-white text-sm lg:text-base px-2 -mt-[0.5rem]">
         {navItems.map(({ label, section }) => (
           <li key={section}>
             <button
               onClick={() => setSelectedSection(section)}
-              className="bg-transparent text-white border-none underline hover:text-blue-400 cursor-pointer p-0 m-0"
+              className="bg-transparent text-white border-none underline hover:text-blue-400 cursor-pointer px-2 py-1 text-xs lg:text-sm"
             >
               {label}
             </button>

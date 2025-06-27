@@ -12,6 +12,9 @@ import Software from "./assets/components/Software";
 import Automation from "./assets/components/Automation";
 import ProjectManagement from "./assets/components/ProjectManagement";
 import Navbar from "./assets/components/navbar";
+import PersistentClouds from './assets/components/PersistentClouds';
+
+
 
 
 function App() {
@@ -26,22 +29,13 @@ function App() {
   return (
     <>
       <Navbar setSelectedSection={setSelectedSection} selectedSection={selectedSection} />
-      {/* Cloud image (fully visible, not clipped) */}
-      <div
-        style={{
-          position: "fixed !important",
-          top: "-1vh",
-          left: "0",
-          width: "700px",
-          height: "500px",
-          backgroundImage: "url('/Cumulus_cloud.png')",
-          backgroundSize: "cover",
-          zIndex: 10,
-          animation: "moveCloud 50s linear infinite",
-          pointerEvents: "none", // don't block anything
-        }}
 
+      {/* Persistent clouds - show everywhere except Contact */}
+      <PersistentClouds
+        setSelectedSection={setSelectedSection}
+        show={selectedSection !== "Contact"}
       />
+
 
       {/* Overlay for click detection (clipped shape, interactive) */}
 

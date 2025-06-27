@@ -77,50 +77,71 @@ html, body {
   /* font-size: var(--font-size-body); */
  */
 
-/* cloud styled inline on app.jsx */
+
 /* .cloud {
-  position: fixed;
-  top: 40%;
-  left: 0;
-  width: 355px;
-  height: 200px;
-  background-image: url('/Cumulus_cloud.png');
-  background-size: cover;
-  z-index: 9999;
-  animation: moveCloud 50s linear infinite;
+  position: fixed !important;
+  top: 10vh;
+  right: 10vw;
+  width: 150px;
+  height: 100px;
+  background-color: red !important;
+  /* background-image: url('/cloud-1.png');  */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* z-index: 20; */
+  /* animation: moveCloud 50s linear infinite; */
+  /* pointer-events: auto; */
+  /* cursor: pointer; */
+/* } */
 
-} */
-
-
-@media (max-width: 800px) {
-  .cloud {
-    transform: scale(0.5);
-    left: 50%;
-    transform: translateX(-50%) scale(0.5);
-  }
+div.cloud {
+  position: fixed !important;
+  top: 50vh !important; /* Move to center of screen for testing */
+  left: 50vw !important; /* Move to center of screen for testing */
+  transform: translate(-50%, -50%) !important; /* Perfect center */
+  width: 200px !important; /* Make it bigger for testing */
+  height: 150px !important; /* Make it bigger for testing */
+  background-color: red !important;
+  background-image: none !important; /* Remove any image */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  z-index: 9999 !important; /* Way above everything */
+  animation: none !important; /* Stop animation for testing */
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  border: 5px solid blue !important; /* Add blue border for visibility */
 }
-
 
 @keyframes moveCloud {
   from {
-    left: -500px;
+    right: -150px; /* Start off-screen right */
     opacity: 0.8;
   }
   to {
-    left: 100%;
+    right: calc(100vw + 150px); /* Move off-screen left */
     opacity: 1;
   }
 }
 
-@media (max-width: 950px) {
-  .castleAndMe {
-    transform: scale(0.5);
-    display: block; /* Ensures it behaves like an image */
-    margin: 0 auto; /* Centers it horizontally */
+@keyframes moveCloudReverse {
+  from {
+    left: -120px; /* Start off-screen left */
+    opacity: 0.6;
+  }
+  to {
+    left: calc(100vw + 120px); /* Move off-screen right */
+    opacity: 0.9;
   }
 }
 
-
+@media (max-width: 800px) {
+  .cloud {
+    width: 105px;
+    height: 70px;
+    right: 5vw;
+    top: 8vh;
+  }
+}
 
 /* a {
   font-weight: 500;

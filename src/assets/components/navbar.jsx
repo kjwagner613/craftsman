@@ -25,7 +25,7 @@ const Navbar = ({ setSelectedSection }) => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <ul className="flex flex-row items-center justify-center space-x-4 list-none text-white text-sm lg:text-base px-2 -mt-[0.5rem]">
+      <ul className="flex flex-row items-center justify-center space-x-4 list-none text-white text-sm lg:text-base px-2 -mt-[0rem]">
         {navItems.map(({ label, section }) => (
           <li key={section}>
             <button

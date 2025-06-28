@@ -12,7 +12,15 @@ module.exports = {
         script: ['Playball', 'cursive'],
         aoora: ['Aoora', 'sans-serif'],
         main: ['var(--font-main)', 'sans-serif'],
+        secondary: ['var(--font-secondary)', 'sans-serif'],
       },
+      fontSize: {
+        titles: ['var(--font-size-titles)'],
+        headers: ['var(--font-size-headers)'],
+        body: ['var(--font-size-body)'],
+        small: ['var(--font-size-small)'],
+      },
+
       transitionProperty: {
         'height': 'height', // Enables smooth height animation
         'opacity': 'opacity', // Enables fade-in/out effects

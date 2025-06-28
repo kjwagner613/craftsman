@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { createPortal } from "react-dom";
 import "./App.css";
@@ -25,7 +25,17 @@ function App() {
   // For example, you can add other logic or variables above it:
 
   // Example: (add any logic here)
+  useEffect(() => {
+    // Only scroll for sub-sections, not AboutMe or Contact
+    if (
+      selectedSection !== "AboutMe" &&
+      selectedSection !== "Contact"
+    ) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [selectedSection]);
 
+	
   return (
     <>
       <Navbar setSelectedSection={setSelectedSection} selectedSection={selectedSection} />
@@ -71,39 +81,24 @@ function App() {
             >
               <Pillars setSelectedSection={setSelectedSection} />
 
-              {selectedSection === "Header" && (
-                <>
-                  {window.scrollTo({ top: 0, behavior: "smooth" })}
-                  <Header selected={true} />
-                </>
+              {selectedSection === "Header" && (       
+                  <Header selected={true} />             
               )}
 
-              {selectedSection === "Software" && (
-                <>
-                  {window.scrollTo({ top: 0, behavior: "smooth" })}
-                  <Software selected={true} />
-                </>
+              {selectedSection === "Software" && (              
+                  <Software selected={true} />              
               )}
 
-              {selectedSection === "Foundation" && (
-                <>
-                  {window.scrollTo({ top: 0, behavior: "smooth" })}
-                  <Foundation selected={true} />
-                </>
+              {selectedSection === "Foundation" && (                
+                  <Foundation selected={true} />                
               )}
 
-              {selectedSection === "ProjectManagement" && (
-                <>
-                  {window.scrollTo({ top: 0, behavior: "smooth" })}
-                  <ProjectManagement selected={true} />
-                </>
+              {selectedSection === "ProjectManagement" && (               
+                  <ProjectManagement selected={true} />               
               )}
 
-              {selectedSection === "Automation" && (
-                <>
-                  {window.scrollTo({ top: 0, behavior: "smooth" })}
-                  <Automation selected={true} />
-                </>
+              {selectedSection === "Automation" && (                                 
+                  <Automation selected={true} />                
               )}
             </motion.div>
           </AnimatePresence>

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import ContactForm from './contactForm'
+import ContactForm from './contactForm';
 
 import '../../index.css';
 
@@ -29,8 +29,8 @@ const Contact = ({ selected }) => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="flex flex-col items-center mb-8 w-full max-w-5xl">
-        <h1 className="text-3xl font-semibold mt-[15vh] mb-6 z-30">Contact Me</h1>
+      <div className="flex flex-col items-center mb-8 w-full max-w-5xl">npm 
+        <h1 className="font-[var(--font-secondary)] text-[var(--font-size-titles)] font-semibold mt-[15vh] mb-6 z-30">Contact Me</h1>
 
         {/* Netlify Hidden Fields for messaging*/}
 
@@ -127,9 +127,9 @@ const Contact = ({ selected }) => {
           <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-0">
             <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
             <div className="flex flex-col items-center mb-4">
-              <p className="text-gray-600" style={{ color: "black", animation: "blink" }}></p>
+              <p className="text-gray-600 font-[var(--font-main)]">A critique, suggestion, or just a comment or question. I appreciate all feedback</p>
             </div>
-            <p className="mb-4 flex flex-col items-center">If you prefer, you can also reach out to me using the form below:</p>
+            <p className="mb-4 flex flex-col items-center">Or, if there is something you would like to know more about, this is an all purpose "Reach Kevin" form:</p>
 
             {/* Contact Form */}
             <motion.div

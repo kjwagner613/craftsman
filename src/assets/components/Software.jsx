@@ -18,7 +18,7 @@ const Software = ({ selected }) => {
   }, [selected]);
 
   return (
-    <div className={`flex flex-col items-center w-full transition-opacity transition-transform duration-700 ease-in-out 
+    <div className={`flex flex-col items-center transition-opacity transition-transform duration-700 ease-in-out 
       ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-6'}`}>
       <h1>Software Development</h1>
       <p className="mt-5 text-justify w-[90vw] max-w-[1000px] ">
@@ -28,12 +28,12 @@ const Software = ({ selected }) => {
       </p>
 
       <h2 className="underline"> Applications in Development</h2>
-      <section className="text-justify w-[90vw] max-w-[1000px] ">
+      <section className="text-justify">
         <ol>
           <li>
-            <div className="body-container">
+            <div className="body-container w-[90vw] max-w-[1000px]">
               <p className="proj-titles"><strong>Nursery Resource Demo</strong></p>
-              <p className="project-brief" style={{ maxWidth: "var(--max-width)" }}>Developed for a local commercial nursery on speculation. Intended to be the 1st phase with product inventory, business information and client registry with a 2nd phase including a social networking enhancement allowing their clients to collaborate on care, horticulture, projects, issues, and linking in experts as clients require.</p>
+              <p className="project-brief">Developed for a local commercial nursery on speculation. Intended to be the 1st phase with product inventory, business information and client registry with a 2nd phase including a social networking enhancement allowing their clients to collaborate on care, horticulture, projects, issues, and linking in experts as clients require.</p>
               <p className="built-with">Built with the following:</p>
               <p className="technology-used">React client, Express and Node.js backend. JWT authentication, Tailwind, MongoDB, JavaScript, and HTML/CSS.</p>
               <p className="project-link"><a href="https://demo-nursery-site.netlify.app/" target="_blank"
@@ -52,18 +52,7 @@ const Software = ({ selected }) => {
         <h3> <em> If you would like any developed for your use, please let me know.</em></h3>
 
         <ol>
-          <li>
-            <div className="body-container w-[90vw] max-w-[1000px] ">
-              <p className="proj-titles"><strong>Nursery Resource Demo</strong></p>
-              <p className="project-brief">Developed for a local commercial nursery on speculation. Intended to be the 1st phase with product inventory, business information and client registry with a 2nd phase including a social networking enhancement allowing their clients to collaborate on care, horticulture, projects, issues, and linking in experts as clients require.</p>
-              <p className="built-with">Built with the following:</p>
-              <p className="technology-used">React client, Express and Node.js backend. JWT authentication, Tailwind, MongoDB, JavaScript, and HTML/CSS.</p>
-              <p className="project-link"><a href="https://demo-nursery-site.netlify.app/" target="_blank"
-                rel="noopener noreferrer">Live App on Netlify</a> | <a
-                  href="https://github.com/kjwagner613/newNursery" target="_blank" rel="noopener">GitHub Repo (client and backend)</a>
-              </p>
-            </div>
-          </li>
+
           <li>
             <div className="body-container w-[90vw] max-w-[1000px] ">
               <p className="proj-titles"><strong>Champion - MyLife Wellness Organizer</strong></p>

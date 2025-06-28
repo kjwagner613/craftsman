@@ -27,7 +27,7 @@ const Contact = ({ selected }) => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex flex-col items-center mb-8 w-full max-w-5xl">npm
-        <h1 className="font-[var(--font-secondary)] text-[var(--font-size-titles)] font-semibold mt-[15vh] mb-6 z-30">Contact Me</h1>
+        <h1 className="font-[var(--font-secondary)] text-[var(--font-size-titles)] font-semibold mt-[10vh] mb-6 z-30">Contact Me</h1>
 
         {/* Netlify Hidden Fields for messaging*/}
 
@@ -121,12 +121,12 @@ const Contact = ({ selected }) => {
           transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
           className="flex flex-col w-full items-center"
         >
-          <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-0">
+          <div className="flex flex-col gap-[10px] w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-0">
             <h3 className="text-xl font-semibold mb-2">Send me a message...</h3>
             <div className="flex flex-col items-center mb-4">
-              <p className="text-gray-600 font-[var(--font-main)]">A critique, suggestion, or just a comment or question. I appreciate all feedback</p>
+              <p className="text-gray-600 font-[var(--font-main)]">A critique, suggestion, comment—or even a question. I welcome all feedback.</p>
             </div>
-            <p className="mb-4 flex flex-col items-center">Or, if there is something you would like to know more about, this is an all purpose "Reach Kevin" form:</p>
+            <p className="mb-4 flex flex-col items-center">If there's something you'd like to learn more about, this is your all-purpose "Reach Kevin" form.</p>
 
             {/* Contact Form */}
             <motion.div

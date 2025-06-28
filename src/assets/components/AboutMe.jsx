@@ -83,7 +83,7 @@ const AboutMe = ({ setSelectedSection }) => {
               lineHeight: 1.6,
             }}
           >
-            This quote resonates deeply with me, I have always encouraged people to be creative beyond reason. Start with that and let's see if I can put the foundations required for them to go for it. It is less and less now, our capabilities have grown so much.  I still have that thing pushing me to provide and deliver no matter the obstacles. Anything worth achieving takes time, focused persistent effort, and more time.
+            This quote resonates deeply with me, I have always encouraged people to be creative beyond reason. Start with that and let's see if I can put the foundations required for them to go for it. It is less and less now, our capabilities have grown so much.  I still have that thing pushing me to provide and deliver no matter the obstacles. Anything worth achieving takes time, focused persistent effort, and maybe just a little more time.
           </div>
           <h1 className="">Hello, I'm Kevin Wagner</h1>
           <div

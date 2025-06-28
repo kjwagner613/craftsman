@@ -12,7 +12,7 @@ const PersistentClouds = ({ setSelectedSection, show }) => {
         style={{
           position: 'fixed',
           top: '1vh',
-          right: '10vw',
+          right: '-10vw',
           width: '600px',
           height: '400px',
           backgroundImage: "url('/whispyCloud.png')",

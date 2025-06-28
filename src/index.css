@@ -72,43 +72,25 @@ html, body {
 }
 
 
-div.cloud {
-  position: fixed !important;
-  top: 50vh !important; /* Move to center of screen for testing */
-  left: 50vw !important; /* Move to center of screen for testing */
-  transform: translate(-50%, -50%) !important; /* Perfect center */
-  width: 200px !important; /* Make it bigger for testing */
-  height: 150px !important; /* Make it bigger for testing */
-  background-color: red !important;
-  background-image: none !important; /* Remove any image */
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  z-index: 9999 !important; /* Way above everything */
-  animation: none !important; /* Stop animation for testing */
-  pointer-events: auto !important;
-  cursor: pointer !important;
-  border: 5px solid blue !important; /* Add blue border for visibility */
-}
-
 @keyframes moveCloud {
   from {
-    right: -150px; /* Start off-screen right */
+    right: -550px; /* Start off-screen right */
     opacity: 0.8;
   }
   to {
-    right: calc(100vw + 150px); /* Move off-screen left */
-    opacity: 1;
+    right: calc(100vw + 175px); /* Move off-screen left */
+    opacity: 0.4;
   }
 }
 
 @keyframes moveCloudReverse {
   from {
-    left: -120px; /* Start off-screen left */
-    opacity: 0.6;
+    left: -350px; /* Start off-screen left */
+    opacity: 0.4;
   }
   to {
     left: calc(100vw + 120px); /* Move off-screen right */
-    opacity: 0.9;
+    opacity: 0.7;
   }
 }
 
@@ -228,15 +210,15 @@ a {
   margin-right: 1rem;
 }
 
-#root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > label {
+/* #root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(1) > label {
  
   font-size: 1.4rem;
   font-weight: 600;
   color: black;
   font-family: var(--font-secondary);
   margin-left: 0.5rem;
-}
-
+} */
+/* 
 #root > div > div > div > div > form > div.grid.grid-cols-3.gap-x-\[10px\].gap-y-\[10px\].mb-\[20px\].w-full > div:nth-child(2) > label {
  
   font-size: 1.4rem;
@@ -334,7 +316,7 @@ a {
   font-family: var(--font-main);
   color: black;
  
-}
+} */
 
 /* message me block */
 /* labels */

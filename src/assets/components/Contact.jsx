@@ -5,9 +5,6 @@ import ContactForm from './contactForm';
 
 import '../../index.css';
 
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
 
 const Contact = ({ selected }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +26,7 @@ const Contact = ({ selected }) => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="flex flex-col items-center mb-8 w-full max-w-5xl">npm 
+      <div className="flex flex-col items-center mb-8 w-full max-w-5xl">npm
         <h1 className="font-[var(--font-secondary)] text-[var(--font-size-titles)] font-semibold mt-[15vh] mb-6 z-30">Contact Me</h1>
 
         {/* Netlify Hidden Fields for messaging*/}
@@ -44,7 +41,7 @@ const Contact = ({ selected }) => {
             className="border-2 p-4 rounded z-0"
             style={{ pointerEvents: 'auto' }}
           >
-            <label className="block mb-2 gap-[10px] z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Email:</label>
+            <label className="block mb-2 z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Email:</label>
             <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               kevin.wagner.2024@outlook.com
             </a>
@@ -57,8 +54,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="block mb-2 gap-[10px]" style={{ fontSize: "1.2rem", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }}>LinkedIn:</label>
-            <a href="https://www.linkedin.com/in/kev613/" className="gap-[10px] text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className="block mb-2" style={{ fontSize: "1.2rem", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }}>LinkedIn:</label>
+            <a href="https://www.linkedin.com/in/kev613/" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               linkedin.com/in/kev613
             </a>
           </motion.div>
@@ -68,9 +65,9 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="border-2 p-4 rounded gap-[10px] z-0"
+            className="border-2 p-4 rounded z-0"
           >
-            <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Cover Letter:</label>
+            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Cover Letter:</label>
             <a href="/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               Click to View and Download PDF
             </a>
@@ -83,8 +80,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Phone:</label>
-            <a href="tel:+14582546393" className="gap-[10px] text-blue-400 hover:underline" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Phone:</label>
+            <a href="tel:+14582546393" className="text-blue-400 hover:underline" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               (458) 254-6393
             </a>
           </motion.div>
@@ -96,8 +93,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >GitHub:</label>
-            <a href="https://github.com/kjwagner613" className="gap-[10px] text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >GitHub:</label>
+            <a href="https://github.com/kjwagner613" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
               github.com/kjwagner613
             </a>
           </motion.div>
@@ -107,9 +104,9 @@ const Contact = ({ selected }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={showColumns ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="gap-[10px] border-2 p-4 rounded z-0"
+            className="border-2 p-4 rounded z-0"
           >
-            <label className="gap-[10px] block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Resume:</label>
+            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Resume:</label>
             <a href="/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }} >
               Click to View and Download PDF
             </a>
@@ -125,7 +122,7 @@ const Contact = ({ selected }) => {
           className="flex flex-col w-full items-center"
         >
           <div className="gap-[10px] flex flex-col w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-0">
-            <h3 className="gap-[10px] text-xl font-semibold mb-2">Send me a message...</h3>
+            <h3 className="text-xl font-semibold mb-2">Send me a message...</h3>
             <div className="flex flex-col items-center mb-4">
               <p className="text-gray-600 font-[var(--font-main)]">A critique, suggestion, or just a comment or question. I appreciate all feedback</p>
             </div>

@@ -80,7 +80,7 @@ const Software = ({ selected }) => {
             </div>
           </li>
           <li>
-            <div className="body-container w-[90vw] max-w-[1000px] " style={{ maxWidth: "var(--max-width)" }}>
+            <div className="body-container w-[90vw] max-w-[1000px] ">
               <p className="proj-titles"><strong>ToDo - A Task List</strong></p>
               <p className="project-brief">Just an easy-to-use task list where you can create tasks quickly, then come
                 back to them at a more convenient time to add additional information. It is a front-end REACT
@@ -96,7 +96,7 @@ const Software = ({ selected }) => {
             </div>
           </li>
           <li>
-            <div className="body-container" style={{ maxWidth: "var(--max-width)" }}>
+            <div className="body-container w-[90vw] max-w-[1000px]">
               <p className="proj-titles"><strong>Community Cookbook</strong></p>
               <p className="project-brief">Share your recipes with a community that you select. You can create and keep
                 track of your inventory of ingredients, share your recipes with family and friends if you choose,
@@ -109,7 +109,7 @@ const Software = ({ selected }) => {
             </div>
           </li>
           <li>
-            <div className="body-container" style={{ maxWidth: "var(--max-width)" }}>
+            <div className="body-container w-[90vw] max-w-[1000px]">
               <p className="proj-titles"><strong>HSE Good Catch Tracker</strong></p>
               <p className="project-brief">Intended for Health, Safety, and Environmental risk mitigation, employees can
                 quickly log any hazards they come across during their day in a system that can notify their safety
@@ -124,7 +124,7 @@ const Software = ({ selected }) => {
             </div>
           </li>
           <li>
-            <div className="body-container" style={{ maxWidth: "var(--max-width)" }}>
+            <div className="body-container w-[90vw] max-w-[1000px]">
               <p className="proj-titles"><strong>The Concentration Game</strong></p>
               <p className="project-brief">A fun memory concentration game with vibrant artistry and an engaging theme.
                 See if you can identify the three animals that come across your path, then pick them out of a

@@ -128,9 +128,18 @@ const AboutMe = ({ setSelectedSection }) => {
 
           <button
             onClick={handleClick}
-            className="mt-[4rem] px-6 py-3 bg-blue-500 hover:bg-blue-700 rounded transition-all duration-500"
-          >
-            Click here for my portfolio
+            style={{
+              backgroundColor: "transparent", // or any color you prefer
+              color: "#8b4513",
+              border: "none",
+              padding: "1.2rem 1.5rem",
+              borderRadius: "0.5rem",
+              cursor: "pointer",
+              fontSize: "var(--font-size-body)",
+              fontFamily: "var(--font-main)",
+              margin: "1rem 0"
+            }}>
+                 Click here for my portfolio
           </button>
           <p className="w-[90vw] max-w-[1000px] ">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
         </div>

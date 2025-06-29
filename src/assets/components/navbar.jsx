@@ -26,15 +26,15 @@ const Navbar = ({ setSelectedSection }) => {
       }}
     >
       <div className="pointer-events-auto">
-        <ul className="flex flex-row items-center justify-center space-x-4 list-none text-white text-sm lg:text-base px-2 -mt-[0rem]">
+        <ul className="flex flex-row items-center justify-center space-x-4 list-none text-white text-sm lg:text-base px-2 mt-[1rem]">
           {navItems.map(({ label, section }) => (
             <li key={section}>
-              <button
+              <buttonLegacy
                 onClick={() => setSelectedSection(section)}
                 className="bg-transparent text-white border-none underline hover:text-blue-400 cursor-pointer px-2 py-1 text-xs lg:text-sm"
               >
                 {label}
-              </button>
+              </buttonLegacy>
             </li>
           ))}
         </ul>

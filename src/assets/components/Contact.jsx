@@ -59,7 +59,7 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className={typography.fieldLabelAlt}>LinkedIn:</label>
+            <label className={typography.fieldLabel}>LinkedIn:</label>
             <a href="https://www.linkedin.com/in/kev613/" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
               linkedin.com/in/kev613
             </a>
@@ -72,7 +72,7 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className={typography.fieldLabelAlt}>Cover Letter:</label>
+            <label className={typography.fieldLabel}>Cover Letter:</label>
             <a href="/Kevin Wagner Cover Letter 2025.pdf" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
               Click to View and Download PDF
             </a>
@@ -85,7 +85,7 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className={typography.fieldLabelAlt}>Phone:</label>
+            <label className={typography.fieldLabel}>Phone:</label>
             <a href="tel:+14582546393" className={typography.fieldLink}>
               (458) 254-6393
             </a>

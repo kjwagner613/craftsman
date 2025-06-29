@@ -30,7 +30,7 @@ const Foundation = ({ selected }) => {
 
         <h4>The Principles That Drive My Work</h4>
         <p>Success isn’t accidental—it’s a product of theory, practice, and principle working in unison. Whether in Software, infrastructure, or project management, I apply a mindset rooted in efficiency, precision, and continuous refinement.</p>
-        <p>There are no shortcuts, no easier ways—only meticulous planning, strategic execution, and a commitment to excellence at every stage.</p>
+        <p>There are no shortcuts, no easier way—only meticulous planning, strategic execution, and a commitment to excellence at every stage.</p>
 
         <h4>Bringing It All Together</h4>
 

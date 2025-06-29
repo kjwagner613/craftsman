@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import { layout, grids, typography, combineClasses, components, commonStyles } from '../../utils';
+
+
 
 const AboutMe = ({ setSelectedSection }) => {
   const handleClick = () => setSelectedSection('Header');
@@ -9,11 +12,13 @@ const AboutMe = ({ setSelectedSection }) => {
       animate={{ scale: 1, opacity: 1 }}
       exit={{ y: '100vh', opacity: 0 }}
       transition={{ duration: 0.7, ease: 'easeInOut' }}
-      className="flex items-center justify-center"
+      className={layout.centerColumn}
     >
-      <div className="w-[90vw] max-w-[1000px] text-center">
-        <div className="flex flex-col items-center mb-8">
-          <div className="picblock flex column items-center justify-center">
+      <div className={`${commonStyles.container} text-center`}>
+        <div className={combineClasses("mb-8", layout.centerColumn)}>
+
+          <div {...components.picBlock}>
+
             <picture>
               <source
                 srcSet="/castlebadge-100-wBevel.png"

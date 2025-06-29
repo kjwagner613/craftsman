@@ -23,7 +23,7 @@ html, body {
   --font-size-headers: 1.8rem;
   --font-size-body: 1.3rem;
   --font-size-small: 1.1rem;
-  --max-width: none;
+  --max-width: 1000px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

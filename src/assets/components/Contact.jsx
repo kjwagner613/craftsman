@@ -2,6 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ContactForm from './contactForm';
+import { typography } from '../../utils/typography';
+import { layout } from '../../utils/layout';
+import { grids } from '../../utils/grids';
+import { commonStyles } from '../../utils/commonStyles';
+import { combineClasses } from '../../utils/index';
 
 import '../../index.css';
 
@@ -25,14 +30,14 @@ const Contact = ({ selected }) => {
   }, [selected]);
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="flex flex-col items-center mb-8 w-full max-w-5xl">npm
-        <h1 className="font-[var(--font-secondary)] text-[var(--font-size-titles)] font-semibold mt-[10vh] mb-6 z-30">Contact Me</h1>
+    <div className={layout.centerFull}>
+      <div className={layout.sectionInnerAlt}>
+        <h1 className={typography.sectionTitle}>Contact Me</h1>
 
         {/* Netlify Hidden Fields for messaging*/}
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-3 gap-x-[10px] gap-y-[10px] mb-[20px] w-full">
+        <div className={grids.contactTiles}>
           {/* Email */}
           <motion.div
             initial={{ opacity: 0, y: 60 }}
@@ -41,8 +46,8 @@ const Contact = ({ selected }) => {
             className="border-2 p-4 rounded z-0"
             style={{ pointerEvents: 'auto' }}
           >
-            <label className="block mb-2 z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Email:</label>
-            <a href="mailto:kevin.wagner.2024@outlook.com" className="text-blue-400 hover:underline z-50" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className={typography.fieldLabel}>Email:</label>
+            <a href="mailto:kevin.wagner.2024@outlook.com" className={typography.fieldLink}>
               kevin.wagner.2024@outlook.com
             </a>
           </motion.div>
@@ -54,8 +59,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="block mb-2" style={{ fontSize: "1.2rem", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }}>LinkedIn:</label>
-            <a href="https://www.linkedin.com/in/kev613/" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className={typography.fieldLabelAlt}>LinkedIn:</label>
+            <a href="https://www.linkedin.com/in/kev613/" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
               linkedin.com/in/kev613
             </a>
           </motion.div>
@@ -67,8 +72,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Cover Letter:</label>
-            <a href="/Kevin Wagner Cover Letter 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className={typography.fieldLabelAlt}>Cover Letter:</label>
+            <a href="/Kevin Wagner Cover Letter 2025.pdf" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
               Click to View and Download PDF
             </a>
           </motion.div>
@@ -80,8 +85,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Phone:</label>
-            <a href="tel:+14582546393" className="text-blue-400 hover:underline" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className={typography.fieldLabelAlt}>Phone:</label>
+            <a href="tel:+14582546393" className={typography.fieldLink}>
               (458) 254-6393
             </a>
           </motion.div>
@@ -93,8 +98,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >GitHub:</label>
-            <a href="https://github.com/kjwagner613" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }}>
+            <label className={typography.fieldLabel}>GitHub:</label>
+            <a href="https://github.com/kjwagner613" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
               github.com/kjwagner613
             </a>
           </motion.div>
@@ -106,8 +111,8 @@ const Contact = ({ selected }) => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="border-2 p-4 rounded z-0"
           >
-            <label className="block mb-2" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)", textAlign: "left", marginLeft: "1rem" }} >Resume:</label>
-            <a href="/Kevin Wagner Resume 2025.pdf" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer" style={{ fontSize: "var(--font-size-small)", fontFamily: "var(--font-main)" }} >
+            <label className={typography.fieldLabel}>Resume:</label>
+            <a href="/Kevin Wagner Resume 2025.pdf" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
               Click to View and Download PDF
             </a>
           </motion.div>
@@ -119,14 +124,14 @@ const Contact = ({ selected }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={showColumns ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
-          className="flex flex-col w-full items-center"
+          className={layout.formWrapper}
         >
-          <div className="flex flex-col gap-[10px] w-full md:w-1/2 border-yellow-300 border-2 rounded-lg p-6 z-0">
-            <h3 className="text-xl font-semibold mb-2">Send me a message...</h3>
-            <div className="flex flex-col items-center mb-4">
-              <p className="text-gray-600 font-[var(--font-main)]">A critique, suggestion, comment—or even a question. I welcome all feedback.</p>
+          <div className={layout.formContainer}>
+            <h3 className={typography.h3Title}>Send me a message...</h3>
+            <div className={layout.messageIntro}>
+              <p className={typography.helperText}>A critique, suggestion, comment—or even a question. I welcome all feedback.</p>
             </div>
-            <p className="mb-4 flex flex-col items-center">If there's something you'd like to learn more about, this is your all-purpose "Reach Kevin" form.</p>
+            <p className={layout.messageIntro}>If there's something you'd like to learn more about, this is your all-purpose "Reach Kevin" form.</p>
 
             {/* Contact Form */}
             <motion.div

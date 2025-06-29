@@ -129,7 +129,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <button
             onClick={handleClick}
             style={{
-              backgroundColor: "transparent", // or any color you prefer
+              backgroundColor: "rgb(253, 223, 152, 0.65)",
               color: "#8b4513",
               border: "none",
               padding: "1.2rem 1.5rem",
@@ -139,7 +139,7 @@ const AboutMe = ({ setSelectedSection }) => {
               fontFamily: "var(--font-main)",
               margin: "1rem 0"
             }}>
-                 Click here for my portfolio
+            Click here for my portfolio
           </button>
           <p className="w-[90vw] max-w-[1000px] ">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
         </div>

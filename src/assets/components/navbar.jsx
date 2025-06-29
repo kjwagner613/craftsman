@@ -19,7 +19,7 @@ const Navbar = ({ setSelectedSection }) => {
         left: "-1vw",
         width: "calc(100% + 2vw)", // Adjust width to cover the full viewport
         height: "25vh",
-        backgroundImage: "url('/sunFade.png')",
+        backgroundImage: "url('/newSun8.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

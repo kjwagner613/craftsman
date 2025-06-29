@@ -1,34 +1,25 @@
-# Kevin Wagner Portfolio
 
+## 📦 Kevin’s Portfolio  
+A responsive, React-based personal portfolio crafted with modular utility architecture, scoped styling, and a custom layout system for clear scalability and expressive design.
 
-## 💡 Overview
+### 🔧 Built With  
+- React (JSX + hooks)  
+- Tailwind-inspired scoped utility design  
+- Modular `.util.js` architecture  
+- Custom layout abstraction (`layout.centerCol`)  
+- Subtle CSS transitions & scroll-triggered animations  
+- Photoshop-crafted cloud vignette assets  
 
-Portoflio for presenting my abilities in hope of gaining employment.
+### 🧠 Design Philosophy  
+Every element—from the coral-lavender sky to the contact vignette—is intentional. This project blends **clean engineering** with **visual storytelling**, reflecting my approach as both a developer and designer.
 
-## 🚀 Features
+### 🧰 Folder Structure Highlights  
+- `components/` → reusable page components (Hero, Projects, etc.)  
+- `utils/` → helper functions, animation triggers, interaction handlers  
+- `styles/` → scoped layout logic with `centerCol`, z-index layering, and responsive breakpoints  
 
-- User registration and login
-- Create/edit/view/update personalized wellness plans
-- Meal plan creation
-- Calendar view of plans
-- Friendly custom error pages
-- Responsive design with visual enhancements
+### 🌀 Visual System  
+- Gradient-sky theme carried across [LinkedIn banner](#) and portfolio header  
+- KW medallion logo system with layered export and dynamic tone shifting  
+- Responsive navbar with custom transition timing and subtle motion cues  
 
-## 🧑‍💻 Technologies Used
-
-- HTML/CSS
-- Vite + React
-- Javascript
-- Tailwind
-- Netlify
-
-## 📁 File Structure
-
-
-
-## 🌐 Deployed App
-
-
-## 🙏 Author
-
-Kevin Wagner — Full-stack developer

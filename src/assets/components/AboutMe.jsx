@@ -118,7 +118,7 @@ const AboutMe = ({ setSelectedSection }) => {
             </span>
 
             <div className="flex flex-col mt-6 leading-[2]">
-              <p className="font-[var(--font-main)] text-center whitespace-nowrap ">Look beyond requirements, &rarr; to history.</p>
+              <p className="font-[var(--font-main)] text-center whitespace-nowrap ">Look beyond requirements &rarr; to history.</p>
               <p className="font-[var(--font-main)] text-center">The experiences that shaped the need.</p>
               <p className="font-[var(--font-main)] text-center">Always with the end goal in mind.</p>
             </div>
@@ -126,7 +126,7 @@ const AboutMe = ({ setSelectedSection }) => {
           <div className="" style={{ fontFamily: "var(--font-secondary)", fontSize: "2.5rem" }}>
             <br /> Craftsmanship.
           </div>
-          <div className="mb-[1.5rem]" style={{ fontFamily: "var(--font-main)", fontSize: "1.5rem" }}><br />After all, you can always roll it back.<br /></div>
+          <div className="mb-[2rem]" style={{ fontFamily: "var(--font-main)", fontSize: "1.5rem" }}><br />You will never know what you can achieve, unless you try.<br /></div>
 
 
 

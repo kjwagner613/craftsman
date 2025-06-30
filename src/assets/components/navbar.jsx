@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 
 const Navbar = ({ setSelectedSection }) => {
@@ -29,12 +30,18 @@ const Navbar = ({ setSelectedSection }) => {
         <ul className="flex flex-row items-center justify-center space-x-4 list-none text-white text-sm lg:text-base px-2 mt-[1rem]">
           {navItems.map(({ label, section }) => (
             <li key={section}>
-              <buttonLegacy
-                onClick={() => setSelectedSection(section)}
-                className="bg-transparent text-white border-none underline hover:text-blue-400 cursor-pointer px-2 py-1 text-xs lg:text-sm"
+              <a
+                href={`#${section}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSelectedSection(section);
+                }}
+                className="text-white hover:text-blue-400 cursor-pointer px-2 py-1 text-xs lg:text-sm"
               >
                 {label}
-              </buttonLegacy>
+              </a>
+
+
             </li>
           ))}
         </ul>

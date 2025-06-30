@@ -7,6 +7,10 @@ export const commonStyles = {
   fadeIn: "transition-opacity transition-transform duration-700 ease-in-out",
   visible: "opacity-100 scale-100 translate-y-0",
   hidden: "opacity-0 scale-90 translate-y-6",
+  tileBase: "relative group p-4 text-white hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] hover:animate-pulse transition-all duration-300 ease-in-out",
+
+
+
 
 
   // Font styles
@@ -22,7 +26,7 @@ export const cssVars = {
   fontSizeBody: { fontSize: "var(--font-size-body)" },
   fontSizeHeader: { fontSize: "var(--font-size-header)" },
   fontSizeTitles: { fontSize: "var(--font-size-titles)" },
-}; 
+};
 
 export const motionTokens = {
   contactTileAnim: (delay = 0.2) => ({

@@ -17,7 +17,8 @@ const AboutMe = ({ setSelectedSection }) => {
       <div className={`${commonStyles.container} text-center`}>
         <div className={combineClasses("mb-8", layout.centerColumn)}>
 
-          <div {...components.picBlock}>
+          <div className={components.picBlock}>
+
 
             <picture>
               <source
@@ -88,11 +89,14 @@ const AboutMe = ({ setSelectedSection }) => {
               lineHeight: 1.6,
             }}
           >
-            This quote resonates deeply with me, I have always encouraged people to be creative beyond reason. Start with that and let's see if I can put the foundations required for them to go for it. It is less and less now, our capabilities have grown so much.  I still have that thing pushing me to provide and deliver no matter the obstacles. Anything worth achieving takes time, focused persistent effort, and maybe just a little more time.
+            “The sky’s the limit” is where I prefer to begin. I’ve always encouraged those I supported to be creative beyond reason. Start there—and let’s see if I can lay the foundations needed to build and sustain it. The gap between imagination and reality is shrinking. We’ve come a long way from Quadra 950s powered by 33MHz Motorola chips.
+            That same drive still pushes me—to provide, to deliver, no matter the obstacle. Anything worth achieving takes time, focused persistence, and maybe a little sacrifice. And that’s exactly what makes the light on the other side of effort, past exhaustion, so bright.
+
           </div>
-          <h1 className="">Hello, I'm Kevin Wagner</h1>
+          <h1 className="leading-[2]">Hello, I'm Kevin Wagner<br />
+            Methodical problem-solver. <br />Technologist.<br /> Developer.<br /> Systems Optimizer.</h1>
           <div
-            className="text-justify w-[90vw] max-w-[1000px] "
+            className="text-justify w-[90vw] max-w-[900px] "
             style={{
               fontSize: "1.2rem",
               fontFamily: "var(--font-main)",
@@ -116,13 +120,13 @@ const AboutMe = ({ setSelectedSection }) => {
             <div className="flex flex-col mt-6 leading-[2]">
               <p className="font-[var(--font-main)] text-center whitespace-nowrap ">Look beyond requirements, &rarr; to history.</p>
               <p className="font-[var(--font-main)] text-center">The experiences that shaped the need.</p>
-              <p className="font-[var(--font-main)] text-center">Always with the end goal in mind.</p  >
+              <p className="font-[var(--font-main)] text-center">Always with the end goal in mind.</p>
             </div>
           </div>
           <div className="" style={{ fontFamily: "var(--font-secondary)", fontSize: "2.5rem" }}>
             <br /> Craftsmanship.
           </div>
-          <div className="text-left " style={{ fontFamily: "var(--font-main)", fontSize: "1.5rem" }}><br />After all, you can always roll it back. <br /></div>
+          <div className="mb-[1.5rem]" style={{ fontFamily: "var(--font-main)", fontSize: "1.5rem" }}><br />After all, you can always roll it back.<br /></div>
 
 
 

@@ -5,6 +5,7 @@ import ContactForm from './contactForm';
 import { typography } from '../../utils/typography';
 import { layout } from '../../utils/layout';
 import { grids } from '../../utils/grids';
+import { components } from '../../utils/components';
 import { commonStyles } from '../../utils/commonStyles';
 import { combineClasses } from '../../utils/index';
 
@@ -112,9 +113,15 @@ const Contact = ({ selected }) => {
             className="border-2 p-4 rounded z-0"
           >
             <label className={typography.fieldLabel}>Resume:</label>
-            <a href="/Kevin Wagner Resume 2025.pdf" className={typography.fieldLink} target="_blank" rel="noopener noreferrer">
+            <a
+              href="/Kevin Wagner Resume 2025.pdf"
+              className={components.fileUpdate} // <- merged styles live here
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Click to View and Download PDF
             </a>
+
           </motion.div>
         </div>
 

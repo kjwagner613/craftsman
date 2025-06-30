@@ -1,6 +1,8 @@
 
 import { layout } from "./layout.js";
 import { combineClasses } from "./classUtils.js";
+import { typography } from "./typography.js";
+import { commonStyles } from "./commonStyles.js";
 
 export const components = {
     picBlock: combineClasses("picblock", layout.centerRow),
@@ -21,4 +23,5 @@ export const components = {
         "p-[calc(.5em+0.45em)] px-[calc(.9em+0.45em)]",
         "user-select-none touch-manipulation",
     ].join(" "),
+    fileUpdate: combineClasses(typography.fieldLink, commonStyles.tileBase),
 };

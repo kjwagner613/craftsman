@@ -24,8 +24,7 @@ const Software = ({ selected }) => {
       <p className="mt-5 text-justify w-[90vw] max-w-[1000px] ">
         Software development is a natural evolution of my career—a way to solve problems, refine systems, and empower people through technology. Years spent supporting businesses, managing projects, and automating workflows have reinforced one truth: code is more than syntax—it’s the bridge between vision and execution. Regardless of the platform or industry, Software drives transformation, scales solutions, and turns ideas into reality.</p>
       <p className="mt-5 text-justify w-[90vw] max-w-[1000px] ">My experience has honed the ability to balance precision with adaptability, ensuring projects meet deadlines, deliver value, and optimize performance. But beyond efficiency, I believe in craftsmanship—writing code with clarity, consideration, and patience, always keeping the end goal in mind.</p>
-      <p className="mt-5 mb-[5vh] text-justify w-[90vw] max-w-[1000px] ">Technology should serve people, not complicate their work. My approach prioritizes function, elegance, and purpose—building systems that don’t just work, but work well, which was evidenced  most recently during the SAP implementation at multiple sites. I had developed interim solutions to bridge gaps between the customized SAP template and day-to-day operational needs. These "temporary tools" were designed to be phased out once SAP delivered equivalent functionality. However, even years after these enhancements were rolled-out, many of these temporary solutions remained in active use—endorsed by users for their simplicity and alignment with real-world workflows.
-      </p>
+      <p className="mt-5 mb-[5vh] text-justify w-[90vw] max-w-[1000px] ">Technology should serve people, not complicate their work. My approach emphasizes function, elegance, and purpose—building systems that don’t just work, but work well. That mindset proved essential during an SAP implementation across multiple sites from California to China. I developed interim solutions to bridge the gap between the customized SAP template and day-to-day operational needs. These “temporary tools” were meant to sunset once SAP delivered equivalent features—but even years later, many remained in active use, valued for their simplicity and alignment with real-world workflows.</p>
 
       <h2 className="underline"> Applications in Development</h2>
       <section className="text-justify">
@@ -59,9 +58,7 @@ const Software = ({ selected }) => {
               <p className="project-brief">Share the burden of designing and maintaining a healthy plan with your loved
                 ones.</p>
               <p className="built-with">Built with the following:</p>
-              <p className="technology-used">Python, Django, PostgreSQL, HTML/CSS, Bootstrap, Heroku, Whitenoise (to
-                serve
-                static files)</p>
+              <p className="technology-used">Python, Django, PostgreSQL, HTML/CSS, Bootstrap, Heroku, Whitenoise (used to serve static files directly from the Python backend)</p>
               <p className="project-link"><a href="https://lifeplan-69c616f99dcc.herokuapp.com/" target="_blank"
                 rel="noopener noreferrer">Live App on Heroku</a> | <a
                   href="https://github.com/kjwagner613/MyPlanForLife" target="_blank" rel="noopener">GitHub Repo</a>

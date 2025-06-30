@@ -187,12 +187,12 @@ button:focus-visible {
   outline-offset: .05em;
 }
 
-.button:active {
+button:active {
   background: var(--primary-green);
   color: #fff;
 }
 
-buttonLegacy {
+button.buttonNav {
   border-radius: var(--border-radius);
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -200,17 +200,17 @@ buttonLegacy {
   font-weight: 500;
   font-family: var(--font-main);
   color: var(--text-color-dark);
-  background-color: var(--background-cream);
+  background-color: transparent;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   cursor: pointer;
   transition: border-color 0.25s, background-color 0.25s;
 }
-buttonLegacy:hover {
+button.buttonNav:hover {
   border: 3px solid #646cff;
   background-color: #f0eacb;
 }
-buttonLegacy:focus,
-buttonLegacy:focus-visible {
+button.buttonNav:focus,
+button.buttonNav:focus-visible {
   outline: 2px solid #646cff;
   outline-offset: 2px;
 }
@@ -238,7 +238,12 @@ buttonLegacy:focus-visible {
   display: inline-block;
 }
 a {
-  color: var(--text-color-light);
+  display: inline-block;  
+  padding: 0.5rem .5rem;
+  font-family: var(--font-main);
+  font-size: var(--font-size-body);
+  font-weight: 600;
+  color: var(--text-color-dark);
   text-decoration: underline;
 }
 

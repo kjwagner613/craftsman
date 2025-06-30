@@ -8,6 +8,7 @@ export const commonStyles = {
   visible: "opacity-100 scale-100 translate-y-0",
   hidden: "opacity-0 scale-90 translate-y-6",
   tileBase: "relative group p-4 text-white hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] hover:animate-pulse transition-all duration-300 ease-in-out",
+  hoverGlow: "hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] hover:animate-pulse hover:scale-[1.02] transition-all duration-300 ease-in-out",
 
 
 

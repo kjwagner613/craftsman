@@ -23,5 +23,8 @@ export const components = {
         "p-[calc(.5em+0.45em)] px-[calc(.9em+0.45em)]",
         "user-select-none touch-manipulation",
     ].join(" "),
-    fileUpdate: combineClasses(typography.fieldLink, commonStyles.tileBase),
+    fileUpdate: combineClasses(typography.fieldLink, commonStyles.tileBase), //for contact enhancement
+    fileUpdateLabel: combineClasses(typography.fieldLabel, "mb-2"),  //for contact enhancement
+    contactTile: combineClasses("contact-tile", "border-2", "p-4", "rounded", "z-0"),
+    contactTileLabel: combineClasses(typography.fieldLabel, "mb-2"),
 };

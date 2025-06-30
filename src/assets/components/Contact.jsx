@@ -115,7 +115,7 @@ const Contact = ({ selected }) => {
             <label className={typography.fieldLabel}>Resume:</label>
             <a
               href="/Kevin Wagner Resume 2025.pdf"
-              className={components.fileUpdate} // <- merged styles live here
+              className={typography.fieldLink} 
               target="_blank"
               rel="noopener noreferrer"
             >

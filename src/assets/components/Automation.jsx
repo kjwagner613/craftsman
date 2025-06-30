@@ -40,17 +40,6 @@ const Automation = ({ selected }) => {
           </ul>
         </div>
         <button
-         style={{
-              backgroundColor: "transparent", // or any color you prefer
-              color: "#8b4513",
-              border: "none",
-              padding: "1.2rem 1.5rem",
-              borderRadius: "0.5rem",
-              cursor: "pointer",
-              fontSize: "var(--font-size-body)",
-              fontFamily: "var(--font-main)",
-              margin: "1rem 0"
-            }}
           onClick={scrollToTop}
           className="button mt-[5vh]"
         >

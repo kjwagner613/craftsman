@@ -94,7 +94,7 @@ const AboutMe = ({ setSelectedSection }) => {
 
           </div>
           <h1 className="leading-[2]">Hello, I'm Kevin Wagner<br />
-            Methodical problem-solver. <br />Technologist.<br /> Developer.<br /> Systems Optimizer.</h1>
+            Methodical Problem-Solver<br />Systems Optimizer<br />Technologist<br />Developer.</h1>
           <div
             className="text-justify w-[90vw] max-w-[900px] "
             style={{
@@ -131,21 +131,10 @@ const AboutMe = ({ setSelectedSection }) => {
 
 
           <button
-            onClick={handleClick}
-            style={{
-              backgroundColor: "rgb(253, 223, 152, 0.65)",
-              color: "#8b4513",
-              border: "none",
-              padding: "1.2rem 1.5rem",
-              borderRadius: "0.5rem",
-              cursor: "pointer",
-              fontSize: "var(--font-size-body)",
-              fontFamily: "var(--font-main)",
-              margin: "1rem 0"
-            }}>
+            onClick={handleClick}>
             Click here for my portfolio
           </button>
-          <p className="w-[90vw] max-w-[1000px] ">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
+          <p className="">You can navigate this portfolio by clicking the columns on the structure on the next page, or the NavBar up top. Please send me a message if there is anything you would like me to expand on. Thank you for your time.</p>
         </div>
       </div>
     </motion.div>

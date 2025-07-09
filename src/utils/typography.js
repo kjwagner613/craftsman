@@ -9,4 +9,12 @@ export const typography = {
 
   linkText: "text-blue-400 hover:underline z-50",
   formTitle: "text-xl font-semibold mb-2",
+
+  projTitle: "text-2xl mb-4 text-left",
+  projBrief: "text-gray-700 text-base mb-4",
+  projBuiltWith: "text-sm text-gray-600 mb-2",
+  projTech: "text-sm text-gray-500 mb-2",
+  projFurtherDev: "text-sm text-gray-400 mb-2",
+  projDevInProgress: "text-sm text-gray-300 mb-2",
+  projLink: "text-blue-500 hover:underline",
 };

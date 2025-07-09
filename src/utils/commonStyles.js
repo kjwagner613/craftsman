@@ -1,6 +1,7 @@
 export const commonStyles = {
   // Container styles
   container: "w-[90vw] max-w-[1000px] mx-auto",
+  containerCard: "w-[90vw] max-w-[1000px] text-left",
   textContainer: "text-justify",
 
   // Animation styles

@@ -29,40 +29,40 @@ const Software = ({ selected }) => {
       <p className="mt-5 text-justify w-[90vw] max-w-[1000px] ">My experience has honed the ability to balance precision with adaptability, ensuring projects meet deadlines, deliver value, and optimize performance. But beyond efficiency, I believe in craftsmanship—writing code with clarity, consideration, and patience, always keeping the end goal in mind.</p>
       <p className="mt-5 mb-[5vh] text-justify w-[90vw] max-w-[1000px] ">Technology should serve people, not complicate their work. My approach emphasizes function, elegance, and purpose—building systems that don’t just work, but work well. That mindset proved essential during an SAP implementation across multiple sites from California to China. I developed interim solutions to bridge the gap between the customized SAP template and day-to-day operational needs. These “temporary tools” were meant to sunset once SAP delivered equivalent features—but even years later, many remained in active use, valued for their simplicity and alignment with real-world workflows.</p>
 
-     <h2 className="underline">Coding Experience</h2>
-     <section className="langList">
-      <div className={commonStyles.containerCard}>
-        <p className={typography.projTitle}>Languages and Technologies</p>
-        <p className={typography.projBrief}>I am experienced in a wide range of programming languages and technologies, which I have used in various projects. Below is a list of some of the languages and technologies I am proficient in:</p>
-      </div>
-      <div className={commonStyles.container}>
-        <ul className={combineClasses(typography.fieldLabel, "grid grid-cols-3 gap-x-8 gap-y-1 pl-5 list-none text-gray-700 text-base")}>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Python</li>
-          <li>HTML/CSS</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>MongoDB</li>
-          <li>PostgreSQL</li>
-          <li>Django</li>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>Heroku</li>
-          <li>Netlify</li>
-          <li>Vite</li>
-          <li>Tailwind CSS</li>
-          <li>Framer Motion</li>
-          <li>CSS-in-JS</li>
-          <li>RESTful APIs</li>
-          <li>GraphQL</li>
-          <li>Agile Methodologies</li>
-          <li>Test-Driven Development (TDD)</li>
-          <li>Continuous Integration/<br />Continuous Deployment (CI/CD)</li>
-        </ul>
-      </div>
-     </section>
+      <h2 className="underline">Coding Experience</h2>
+      <section className="langList">
+        <div className={commonStyles.containerCard}>
+          <p className={typography.projTitle}>Languages and Technologies</p>
+          <p className={typography.projBrief}>I am experienced in a wide range of programming languages and technologies, which I have used in various projects. Below is a list of some of the languages and technologies I am proficient in:</p>
+        </div>
+        <div className={commonStyles.container}>
+          <ul className={combineClasses(typography.fieldLabel, "grid grid-cols-3 gap-x-8 gap-y-1 pl-5 list-none text-gray-700 text-base")}>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Django</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+            <li>Vite</li>
+            <li>Tailwind CSS</li>
+            <li>Framer Motion</li>
+            <li>CSS-in-JS</li>
+            <li>RESTful APIs</li>
+            <li>GraphQL</li>
+            <li>Agile Methodologies</li>
+            <li>Test-Driven Development (TDD)</li>
+            <li>Continuous Integration/<br />Continuous Deployment (CI/CD)</li>
+          </ul>
+        </div>
+      </section>
 
       <h2 className="underline"> Applications in Development</h2>
       <section className="text-justify">
@@ -77,7 +77,7 @@ const Software = ({ selected }) => {
               <p className="further-dev-inprogress">Further development to truncate connections to make them dynamically configurable for either internal testing or API connection to any DAG form service.</p>
               <p className="project-link"><a href="https://demo-nursery-site.netlify.app/" target="_blank"
                 rel="noopener noreferrer">Live App on Netlify</a> | <a
-                  href="https://github.com/kjwagner613/Avantos-Challenge" target="_blank" rel="noopener">GitHub Repo</a>
+                  href="https://github.com/kjwagner613/field-trip" target="_blank" rel="noopener">GitHub Repo</a>
               </p>
             </div>
           </li>

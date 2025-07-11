@@ -76,8 +76,8 @@ const Software = ({ selected }) => {
               <p className={typography.projFurtherDev}><em>Continued Development:</em></p>
               <p className="further-dev-inprogress">Further development to truncate connections to make them dynamically configurable for either internal testing or API connection to any DAG form service.</p>
               <p className="project-link">
-                {/* <a href="https://demo-nursery-site.netlify.app/" target="_blank"
-                rel="noopener noreferrer">Live App on Netlify</a> |  */}
+                <a href="https://dag-form-field-interface.netlify.app" target="_blank"
+                  rel="noopener noreferrer">Live App on Netlify</a> |
                 <a
                   href="https://github.com/kjwagner613/field-trip" target="_blank" rel="noopener">GitHub Repo</a>
               </p>

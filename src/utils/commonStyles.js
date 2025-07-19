@@ -11,10 +11,6 @@ export const commonStyles = {
   tileBase: "relative group p-4 text-white hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] hover:animate-pulse transition-all duration-300 ease-in-out",
   hoverGlow: "hover:shadow-[0_0_50px_rgba(255,255,255,0.8)] hover:animate-pulse hover:scale-[1.02] transition-all duration-300 ease-in-out",
 
-
-
-
-
   // Font styles
   fontMain: "font-[var(--font-main)]",
   fontSecondary: "font-[var(--font-secondary)]",

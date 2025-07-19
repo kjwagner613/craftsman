@@ -51,6 +51,7 @@ const Software = ({ selected }) => {
             <li>GitHub</li>
             <li>Heroku</li>
             <li>Netlify</li>
+            <li>Azure</li>
             <li>Vite</li>
             <li>Tailwind CSS</li>
             <li>Framer Motion</li>
@@ -67,6 +68,20 @@ const Software = ({ selected }) => {
       <h2 className="underline"> Applications in Development</h2>
       <section className="text-justify">
         <ol>
+          <li>
+            <div className={commonStyles.containerCard}>
+              <p className={typography.projTitle}><strong>Enhanced Task List</strong></p>
+              <p className={typography.projBrief}>An improved task list application with enhanced features for better user experience, inlucding additional fields, updated user interface and critical task notification.</p>
+              <p className={typography.projBuiltWith}>Built with the following:</p>
+              <p className={typography.projTech}>Netlify for the Frontend - Heroku for the Backend, React, Vite, Node.js,
+                Express, MongoDB, HTML/CSS, JavaScript, EJS</p>
+              <p className={typography.projLink}><a href="https://kjs-todo-list.netlify.app/" target="_blank"
+                rel="noopener noreferrer">Live App on Netlify - Frontend</a> | <a
+                  href="https://github.com/kjwagner613/ToDo-List-Frontend" target="_blank" rel="noopener">GitHub
+                  Repo Frontend</a> | <a href="https://github.com/kjwagner613/ToDo-List-Backend" target="_blank"
+                    rel="noopener">GitHub Repo Backend</a></p>
+            </div>
+          </li>
           <li>
             <div className={commonStyles.containerCard}>
               <p className={typography.projTitle}><strong>DAG Form Field Inheritance Interface</strong></p>
@@ -142,8 +157,8 @@ const Software = ({ selected }) => {
                 track of your inventory of ingredients, share your recipes with family and friends if you choose,
                 and
                 if you really trust them, you can even collaborate on recipes together.</p>
-              <p className={typography.projLink}><a className="Link-wrapper" href="https://wagner-cookbook-944b51777ea1.herokuapp.com/" target="_blank"
-                rel="noopener noreferrer">Live App on Heroku </a> | <a
+              <p className={typography.projLink}><a className="Link-wrapper" href="https://community-cookbook.azurewebsites.net/" target="_blank"
+                rel="noopener noreferrer">Live App on Azure </a> | <a
                   href="https://github.com/kjwagner613/wagners-cookbook" target="_blank" rel="noopener">Wagner's
                   Cookbook GitHub Repo</a></p>
             </div>

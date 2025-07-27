@@ -143,7 +143,7 @@ const Software = ({ selected }) => {
               <p className={typography.projTech}>Netlify for the Frontend - Heroku for the Backend, React, Vite, Node.js,
                 Express, MongoDB, HTML/CSS, JavaScript, EJS</p>
               <p className={typography.projLink}><a href="https://kjs-todo-list.netlify.app/" target="_blank"
-                rel="noopener noreferrer">Live App on Netlify - Frontend</a> | <a
+                rel="noopener noreferrer">Live App on Netlify - Frontend</a> <p className={typography.h3Title}>App down for migration to Azure</p>  <a
                   href="https://github.com/kjwagner613/ToDo-List-Frontend" target="_blank" rel="noopener">GitHub
                   Repo Frontend</a> | <a href="https://github.com/kjwagner613/ToDo-List-Backend" target="_blank"
                     rel="noopener">GitHub Repo Backend</a></p>

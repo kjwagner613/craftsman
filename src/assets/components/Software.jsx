@@ -73,7 +73,7 @@ const Software = ({ selected }) => {
               <p className={typography.projTitle}><strong>Enhanced Task List</strong></p>
               <p className={typography.projBrief}>An improved task list application with enhanced features for better user experience, inlucding additional fields, updated user interface and critical task notification.</p>
               <p className={typography.projBuiltWith}>Built with the following:</p>
-              <p className={typography.projTech}>Netlify for the Frontend - Heroku for the Backend, now migrated to Azure, React, Vite, Node.js,
+              <p className={typography.projTech}>Netlify for the Frontend - Heroku originally for the Backend, now migrated to Azure, React, Vite, Node.js,
                 Express, MongoDB, HTML/CSS, JavaScript, EJS</p>
               <p className={typography.projLink}><a href="https://kjwactivetaskmanager.netlify.app/" target="_blank"
                 rel="noopener noreferrer">Live App on Azure - Client</a> | <a
@@ -127,7 +127,7 @@ const Software = ({ selected }) => {
                 ones.</p>
               <p className={typography.projBuiltWith}>Built with the following:</p>
               <p className={typography.projTech}>Python, Django, PostgreSQL, HTML/CSS, Bootstrap, Heroku, Whitenoise (used to serve static files directly from the Python backend)</p>
-              <p className={typography.sectionTitle}>App down for migration to Azure</p>
+              <p className={typography.projTitle}>App down for migration to Azure</p>
               <p className={typography.projLink}><a href="https://lifeplan-69c616f99dcc.herokuapp.com/" target="_blank"
                 rel="noopener noreferrer">Live App on Heroku</a> | <a
                   href="https://github.com/kjwagner613/MyPlanForLife" target="_blank" rel="noopener">GitHub Repo</a>
@@ -143,6 +143,7 @@ const Software = ({ selected }) => {
               <p className={typography.projBuiltWith}>Built with the following:</p>
               <p className={typography.projTech}>Netlify for the Frontend - Heroku for the Backend, React, Vite, Node.js,
                 Express, MongoDB, HTML/CSS, JavaScript, EJS</p>
+              <p className={typography.projTitle}>App down for migration to Azure</p>
               <p className={typography.projLink}><a href="https://kjs-todo-list.netlify.app/" target="_blank"
                 rel="noopener noreferrer">Live App on Netlify - Frontend</a>  <a
                   href="https://github.com/kjwagner613/ToDo-List-Frontend" target="_blank" rel="noopener">GitHub
@@ -171,7 +172,7 @@ const Software = ({ selected }) => {
                 manager, help plan the corrective action, and provide quarterly performance reports.</p>
               <p className={typography.projBuiltWith}>Built with the following:</p>
               <p className={typography.projTech}>Node.js, Express, MongoDB, EJS Templates, bcrypt for password hashing,
-                express-session session management, CSRF for CSRF protection, dotenv, method-override</p> <p className={typography.sectionTitle}>App down for migration to Azure</p>
+                express-session session management, CSRF for CSRF protection, dotenv, method-override</p> <p className={typography.projTitle}>App down for migration to Azure</p>
               <p className={typography.projLink}><a href="https://hse-goodcatch-tracker-a52f04b138c7.herokuapp.com/"
                 target="_blank" rel="noopener noreferrer">Live App to Heroku</a> | <a
                   href="https://github.com/kjwagner613/hse-goodcatch-v4" target="_blank" rel="noopener">GitHub Repo

@@ -71,7 +71,7 @@ const Software = ({ selected }) => {
           <li>
             <div className={commonStyles.containerCard}>
               <p className={typography.projTitle}><strong>Enhanced Task List</strong></p>
-              <p className={typography.projBrief}>An improved task list application with enhanced features for better user experience, inlucding additional fields, updated user interface and critical task notification.</p>
+              <p className={typography.projBrief}>An improved task list application with enhanced features for better user experience, inlucding additional fields, updated user interface and critical task notification.</p><p>This is additional development on the original ToDo Task List App, which is below in the next section, if you would like to compare.</p>
               <p className={typography.projBuiltWith}>Built with the following:</p>
               <p className={typography.projTech}>Netlify for the Frontend - Heroku originally for the Backend, now migrated to Azure, React, Vite, Node.js,
                 Express, MongoDB, HTML/CSS, JavaScript, EJS</p>
@@ -139,13 +139,13 @@ const Software = ({ selected }) => {
               <p className={typography.projTitle}><strong>ToDo - A Task List</strong></p>
               <p className={typography.projBrief}>Just an easy-to-use task list where you can create tasks quickly, then come
                 back to them at a more convenient time to add additional information. It is a front-end REACT
-                interface paired with a backend Node.js with an API connection to the Mongo Atlas DB.</p>
+                interface paired with a backend Node.js with an API connection to the Mongo Atlas DB.</p><p>You can see a new, more developed version of this app in the above section, "Apps currently being developed".</p>
               <p className={typography.projBuiltWith}>Built with the following:</p>
               <p className={typography.projTech}>Netlify for the Frontend - Heroku for the Backend, React, Vite, Node.js,
                 Express, MongoDB, HTML/CSS, JavaScript, EJS</p>
-              <p className={typography.projTitle}>App down for migration to Azure</p>
-              <p className={typography.projLink}><a href="#" onClick={(e) => e.preventDefault()} target="_blank"
-                rel="noopener noreferrer">Live App on Netlify - Frontend</a>  <a
+
+              <p className={typography.projLink}><a href="https://kjs-todo-list.netlify.app" target="_blank"
+                rel="noopener noreferrer">Live App on Netlify - Client</a>  <a
                   href="https://github.com/kjwagner613/ToDo-List-Frontend" target="_blank" rel="noopener">GitHub
                   Repo Frontend</a> | <a href="https://github.com/kjwagner613/ToDo-List-Backend" target="_blank"
                     rel="noopener">GitHub Repo Backend</a></p>
@@ -174,7 +174,7 @@ const Software = ({ selected }) => {
               <p className={typography.projTech}>Node.js, Express, MongoDB, EJS Templates, bcrypt for password hashing,
                 express-session session management, CSRF for CSRF protection, dotenv, method-override</p> <p className={typography.projTitle}>App down for migration to Azure</p>
               <p className={typography.projLink}><a href="#" onClick={(e) => e.preventDefault()} target="_blank"
-                rel="noopener noreferrer">Live App to Heroku</a> | <a
+                rel="noopener noreferrer">Live App on Heroku (Temporarily Unavailable)</a> | <a
                   href="https://github.com/kjwagner613/hse-goodcatch-v4" target="_blank" rel="noopener">GitHub Repo
                   For HSE Good Catch</a></p>
             </div>

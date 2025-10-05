@@ -22,6 +22,7 @@ body {
   --font-size-titles: 2.3rem;
   --font-size-headers: 2rem;
   --font-size-body: 1.3rem;
+  --font-size-field: 0.6rem;
   --font-size-small: 1.1rem;
   --max-width: 1000px;
   font-synthesis: none;

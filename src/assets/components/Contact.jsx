@@ -87,8 +87,8 @@ const Contact = ({ selected }) => {
             className="border-2 p-4 rounded z-0"
           >
             <label className={typography.fieldLabel}>Phone:</label>
-            <a href="tel:+14582546393" className={typography.fieldLink}>
-              (458) 254-6393
+            <a href="tel:+18056513043" className={typography.fieldLink}>
+              (805) 651-3043
             </a>
           </motion.div>
 

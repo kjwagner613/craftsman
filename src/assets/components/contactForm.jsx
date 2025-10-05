@@ -11,14 +11,19 @@ const ContactForm = () => {
     setStatus('Sending...');
 
     try {
-      const res = await fetch('/.netlify/functions/sendEmail', {
+      const formData = new FormData();
+      formData.append('form-name', 'contact');
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('message', message);
+
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message }),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
       });
 
-      const data = await res.json();
-      if (data.success) {
+      if (res.ok) {
         setStatus('✅ Message sent!');
         setName('');
         setEmail('');
@@ -33,7 +38,16 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form 
+      name="contact" 
+      method="POST" 
+      data-netlify="true" 
+      onSubmit={handleSubmit} 
+      className="space-y-4"
+    >
+      {/* Hidden field for Netlify form detection */}
+      <input type="hidden" name="form-name" value="contact" />
+      
       <div className="grid grid-cols-2 gap-[50px]">
         <div className="flex flex-col leading-[2]">
           <label htmlFor="name" className="mb-1">Name:</label>

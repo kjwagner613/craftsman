@@ -48,8 +48,8 @@ const Contact = ({ selected }) => {
             style={{ pointerEvents: 'auto' }}
           >
             <label className={typography.fieldLabel}>Email:</label>
-            <a href="mailto:kevin.wagner.2024@outlook.com" className={typography.fieldLink}>
-              kevin.wagner.2024@outlook.com
+            <a href="mailto:kwagner.2025@outlook.com" className={typography.fieldLink}>
+              kwagner.2025@outlook.com
             </a>
           </motion.div>
 
